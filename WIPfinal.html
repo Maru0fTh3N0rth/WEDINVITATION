@@ -1,0 +1,1760 @@
+<!DOCTYPE html>
+<html lang="de">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Timm & Julia – Hochzeit</title>
+
+    <meta name="description" content="Einladung zur Hochzeit von Timm & Julia">
+
+    <!-- Schöne, geschwungene Schrift + elegante Standardschrift -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* =========================================================
+   FARBEN
+========================================================= */
+
+        :root {
+            --rosa: #c27f88;
+            --rosa-dunkel: #ad6872;
+            --rosa-hell: #e4b9bd;
+            --beige: #f4e7dc;
+            --gruen: #899783;
+            --gruen-dunkel: #687663;
+            --braun: #68564f;
+            --gold: #b99a68;
+        }
+
+
+        /* =========================================================
+   GRUNDLAYOUT
+========================================================= */
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: 'Montserrat', sans-serif;
+            color: var(--braun);
+            /*
+       Euer ursprüngliches Hintergrundbild
+    */
+
+            background-image:
+                linear-gradient(rgba(245, 220, 220, 0.04),
+                    rgba(244, 232, 220, 0.04)),
+                url('https://i.ibb.co/q3X1rtFy/1787837393182-2.jpg');
+
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+
+
+        /* =========================================================
+   DEZENTE RANKEN
+========================================================= */
+
+
+        .vine-left,
+        .vine-right {
+            position: fixed;
+
+            top: 0;
+            bottom: 0;
+            width: 100px;
+            pointer-events: none;
+            z-index: 1;
+            opacity: 0.35;
+        }
+
+
+        .vine-left {
+            left: 0;
+            border-left:
+                2px solid rgba(104, 118, 99, 0.6);
+
+            border-radius:
+                0 0 0 90%;
+
+            transform:
+                translateX(-45px) rotate(-4deg);
+        }
+
+
+        .vine-right {
+            right: 0;
+            border-right:
+                2px solid rgba(104, 118, 99, 0.6);
+
+            border-radius:
+                0 90% 0 0;
+
+            transform:
+                translateX(45px) rotate(4deg);
+        }
+
+
+
+
+        .vine-left::before,
+        .vine-left::after,
+        .vine-right::before,
+        .vine-right::after {
+
+
+            content: "❧";
+            position: absolute;
+            font-size: 40px;
+            color: var(--gruen-dunkel);
+        }
+
+
+
+
+        .vine-left::before {
+            top: 20%;
+            right: -30px;
+            transform: rotate(-25deg);
+        }
+
+        .vine-left::after {
+            top: 70%;
+            right: -30px;
+            transform: rotate(15deg);
+        }
+
+
+        .vine-right::before {
+            top: 35%;
+            left: -30px;
+            transform:
+                scaleX(-1) rotate(-20deg);
+        }
+
+
+        .vine-right::after {
+            top: 80%;
+            left: -30px;
+            transform:
+                scaleX(-1) rotate(15deg);
+        }
+
+
+
+        /* =========================================================
+   HEADER
+========================================================= */
+
+        header {
+            position: relative;
+            z-index: 5;
+            padding: 27px 20px;
+            text-align: center;
+            background:
+                rgba(178, 116, 124, 0.68);
+
+            border-bottom:
+                1px solid rgba(255, 255, 255, 0.45);
+
+            box-shadow:
+                0 5px 25px rgba(70, 50, 45, 0.12);
+        }
+
+
+        .header-small {
+            font-size: 0.7rem;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            color: #fff5f3;
+        }
+
+
+
+        .header-title {
+            margin: 7px 0;
+            font-family:
+                'Great Vibes',
+                cursive;
+
+            font-size:
+                clamp(3rem, 8vw, 4.6rem);
+
+            font-weight: 400;
+            line-height: 1;
+            color: white;
+        }
+
+
+        .header-ornament {
+            color: #efd0d2;
+            font-size: 1.4rem;
+        }
+
+
+        /* =========================================================
+   HAUPTBEREICH
+========================================================= */
+
+
+        #mainDisplay {
+            position: relative;
+            z-index: 3;
+            width: min(1050px, 94%);
+            margin: 35px auto 60px;
+        }
+
+
+
+        /* =========================================================
+   LOGIN / STARTSEITE
+========================================================= */
+
+
+        #login {
+            position: relative;
+            max-width: 720px;
+            margin: 45px auto;
+            padding:
+                50px 30px 55px;
+
+            text-align: center;
+
+            /*
+       Schön transparent,
+       damit das Hintergrundbild sichtbar bleibt
+    */
+
+            background:
+                rgba(255, 242, 239, 0.34);
+
+            border:
+                1px solid rgba(255, 255, 255, 0.60);
+
+            border-radius: 42px;
+
+            box-shadow:
+                0 18px 50px rgba(75, 55, 50, 0.12);
+
+            overflow: hidden;
+        }
+
+
+
+        /* =========================================================
+   DEZENTE DEKORATION
+========================================================= */
+
+        #login::before {
+            content: "❦";
+            position: absolute;
+            left: 12px;
+            top: 0;
+            font-size: 85px;
+            color:
+                rgba(194, 127, 136, 0.40);
+
+            transform:
+                rotate(-25deg);
+        }
+
+
+        #login::after {
+            content: "❦";
+            position: absolute;
+            right: 12px;
+            bottom: 0;
+            font-size: 85px;
+            color:
+                rgba(137, 151, 131, 0.35);
+
+            transform:
+                rotate(155deg);
+        }
+
+
+
+        /* =========================================================
+   STARTSEITEN-TEXT
+========================================================= */
+
+        .welcome-small {
+            margin-top: 10px;
+            font-size: 0.7rem;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            color: var(--gruen-dunkel);
+        }
+
+
+        .welcome-title {
+            margin: 8px 0;
+
+            font-family:
+                'Great Vibes',
+                cursive;
+
+            font-size:
+                clamp(4rem, 13vw, 6.5rem);
+
+            font-weight: 400;
+            line-height: 0.85;
+            color: var(--braun);
+        }
+
+
+
+        .welcome-and {
+            margin: 17px 0;
+            font-family:
+                'Great Vibes',
+                cursive;
+
+            font-size: 3rem;
+
+            color: var(--rosa);
+        }
+
+
+
+        .welcome-date {
+            margin: 30px 0 18px;
+            font-family:
+                'Cormorant Garamond',
+                serif;
+
+            font-size: 1.8rem;
+            color: var(--gruen-dunkel);
+        }
+
+
+
+        .welcome-text {
+            max-width: 500px;
+            margin:
+                0 auto 30px;
+
+            line-height: 1.9;
+            font-size: 0.9rem;
+        }
+
+
+        /* =========================================================
+   NAME
+========================================================= */
+
+        .name-label {
+            display: block;
+
+            margin-bottom: 10px;
+
+            font-family:
+                'Great Vibes',
+                cursive;
+
+            font-size: 2.8rem;
+            line-height: 1.1;
+            color: var(--rosa-dunkel);
+        }
+
+
+
+        #nameInput {
+            width: min(100%, 330px);
+            padding: 14px 18px;
+            border: none;
+            border-bottom:
+                1px solid var(--rosa);
+
+            outline: none;
+
+            background:
+                rgba(255, 255, 255, 0.30);
+
+            border-radius:
+                15px 15px 0 0;
+
+            text-align: center;
+
+            font-family:
+                'Montserrat',
+                sans-serif;
+
+            font-size: 1rem;
+
+            color: var(--braun);
+
+            transition: 0.3s;
+        }
+
+
+
+
+        #nameInput:focus {
+            border-bottom-color:
+                var(--gruen);
+
+            background:
+                rgba(255, 255, 255, 0.45);
+        }
+
+        #nameInput::placeholder {
+            color:
+                rgba(104, 86, 79, 0.55);
+        }
+
+
+
+        /* =========================================================
+   BUTTON
+========================================================= */
+
+
+        .main-button {
+            margin-top: 24px;
+            padding:
+                14px 34px;
+
+            border: none;
+            border-radius: 30px;
+
+            background:
+                rgba(173, 104, 114, 0.90);
+
+            color: white;
+
+            font-family:
+                'Montserrat',
+                sans-serif;
+
+            font-size: 0.72rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            cursor: pointer;
+
+            box-shadow:
+                0 7px 20px rgba(120, 80, 80, 0.15);
+
+            transition: all 0.3s ease;
+        }
+
+
+
+        .main-button:hover {
+            background:
+                rgba(137, 151, 131, 0.92);
+
+            transform:
+                translateY(-2px);
+        }
+
+
+
+        /* =========================================================
+   PERSONALISIERTER BEREICH
+========================================================= */
+
+        .personal-header {
+            position: relative;
+            padding:
+                40px 25px;
+
+            text-align: center;
+
+            background:
+                rgba(255, 242, 239, 0.34);
+
+            border:
+                1px solid rgba(255, 255, 255, 0.62);
+
+            border-radius: 42px;
+            box-shadow:
+                0 15px 40px rgba(70, 55, 50, 0.10);
+
+            overflow: hidden;
+        }
+
+
+        .personal-header::before {
+            content: "❦";
+            position: absolute;
+
+            left: 15px;
+            top: 5px;
+            font-size: 60px;
+
+            color:
+                rgba(194, 127, 136, 0.42);
+
+            transform:
+                rotate(-20deg);
+        }
+
+
+
+        .personal-header::after {
+            content: "❦";
+
+            position: absolute;
+
+            right: 15px;
+            bottom: 5px;
+
+            font-size: 60px;
+            color:
+                rgba(137, 151, 131, 0.35);
+
+            transform:
+                rotate(160deg);
+        }
+
+
+
+
+        .personal-small {
+            font-family:
+                'Great Vibes',
+                cursive;
+
+            font-size:
+                clamp(3rem, 8vw, 4.5rem);
+
+            line-height: 1.1;
+            color:
+                var(--rosa-dunkel);
+        }
+
+
+
+
+        .personal-title {
+            margin: 12px 0;
+            font-family:
+                'Great Vibes',
+                cursive;
+
+            font-size:
+                clamp(4rem, 11vw, 6rem);
+
+            line-height: 0.95;
+            color: var(--braun);
+        }
+
+
+
+        .personal-title span {
+            color: var(--rosa);
+            font-size: 0.7em;
+        }
+
+
+
+
+        .personal-date {
+            font-family:
+                'Cormorant Garamond',
+                serif;
+
+            font-size: 1.6rem;
+
+            color: var(--gruen-dunkel);
+        }
+
+
+
+
+        /* =========================================================
+   NAVIGATION
+========================================================= */
+
+
+        nav {
+            display: flex;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 10px;
+
+            margin:
+                25px auto;
+
+            max-width: 800px;
+        }
+
+
+
+
+        nav button {
+            padding:
+                12px 20px;
+
+            border:
+                1px solid rgba(173, 104, 114, 0.55);
+
+            border-radius: 28px;
+
+            background:
+                rgba(255, 242, 239, 0.38);
+
+            color: var(--braun);
+
+            font-family:
+                'Montserrat',
+                sans-serif;
+
+            font-size: 0.72rem;
+
+            letter-spacing: 1px;
+
+            cursor: pointer;
+
+            transition:
+                all 0.3s ease;
+        }
+
+
+
+
+        nav button:hover {
+            background:
+                rgba(173, 104, 114, 0.86);
+
+            color: white;
+
+            transform:
+                translateY(-2px);
+        }
+
+
+
+
+        /* =========================================================
+   INHALTSKARTEN
+========================================================= */
+
+
+        .content-card {
+            max-width: 850px;
+
+            margin:
+                25px auto 50px;
+
+            padding:
+                50px 35px;
+
+            text-align: center;
+
+            background:
+                rgba(255, 242, 239, 0.32);
+
+            border:
+                1px solid rgba(255, 255, 255, 0.60);
+
+            border-radius: 40px;
+
+            box-shadow:
+                0 15px 45px rgba(70, 55, 50, 0.09);
+
+            animation:
+                fadeIn 0.45s ease;
+        }
+
+
+
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+
+
+        /* =========================================================
+   ÜBERSCHRIFTEN
+========================================================= */
+
+
+        .content-card h2 {
+            margin:
+                0 0 35px;
+            font-family:
+                'Great Vibes',
+                cursive;
+            font-size:
+                clamp(3.2rem, 9vw, 4.7rem);
+            font-weight: 400;
+            line-height: 1;
+            color: var(--rosa-dunkel);
+        }
+
+
+
+        .content-card h2::after {
+            content: "❦";
+            display: block;
+            margin-top: 10px;
+            font-family:
+                'Cormorant Garamond',
+                serif;
+
+            font-size: 1.5rem;
+            color: var(--gold);
+        }
+
+
+
+
+        .content-card h3 {
+            margin-bottom: 8px;
+            font-family:
+                'Cormorant Garamond',
+                serif;
+
+            font-size: 1.8rem;
+            color: var(--gruen-dunkel);
+        }
+
+
+
+
+        .content-card p {
+            line-height: 1.9;
+            font-size: 0.92rem;
+        }
+
+
+
+
+        /* =========================================================
+   DATEN
+========================================================= */
+
+
+        .daten-container {
+            display: grid;
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 22px;
+            max-width: 700px;
+            margin: auto;
+        }
+
+
+
+
+        .daten {
+            padding:
+                28px 20px;
+            background:
+                rgba(255, 255, 255, 0.25);
+            border:
+                1px solid rgba(255, 255, 255, 0.46);
+            border-radius: 30px;
+            box-shadow:
+                0 7px 20px rgba(70, 55, 50, 0.05);
+        }
+
+
+        .daten h3 {
+            margin-top: 0;
+        }
+
+
+
+
+        /* =========================================================
+   ABLAUF
+========================================================= */
+
+
+        .timeline {
+            max-width: 600px;
+            margin: auto;
+            text-align: left;
+        }
+
+
+
+        .timeline-item {
+            position: relative;
+            padding:
+                0 0 35px 35px;
+            border-left:
+                1px solid rgba(194, 127, 136, 0.55);
+        }
+
+
+
+        .timeline-item:last-child {
+            border-left-color:
+                transparent;
+        }
+
+
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -6px;
+            top: 0;
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+            background: var(--rosa);
+            box-shadow:
+                0 0 0 4px rgba(255, 255, 255, 0.30);
+        }
+
+
+
+        .timeline-time {
+            font-family:
+                'Cormorant Garamond',
+                serif;
+
+            font-size: 1.5rem;
+
+            color: var(--gold);
+        }
+
+
+
+        /* =========================================================
+   ABSAGE
+========================================================= */
+
+
+        .absage {
+            margin-top: 40px;
+
+            padding:
+                30px 25px;
+
+            background:
+                rgba(194, 127, 136, 0.20);
+
+            border:
+                1px solid rgba(173, 104, 114, 0.32);
+
+            border-radius: 32px;
+        }
+
+
+
+
+        .absage h3 {
+            margin-top: 0;
+
+            font-family:
+                'Great Vibes',
+                cursive;
+
+            font-size: 3rem;
+
+            font-weight: 400;
+
+            color: var(--rosa-dunkel);
+        }
+
+
+
+        .absage p {
+
+            margin-bottom: 0;
+
+            font-size: 0.95rem;
+
+            line-height: 1.8;
+        }
+
+
+
+        /* =========================================================
+   MAPS
+========================================================= */
+
+
+        .maps {
+            margin:
+                20px auto 45px;
+
+            max-width: 700px;
+        }
+
+
+
+        .maps iframe {
+
+            width: 100%;
+
+            height: 350px;
+
+            border: none;
+
+            border-radius: 28px;
+
+            box-shadow:
+                0 10px 30px rgba(70, 55, 50, 0.12);
+        }
+
+
+        /* =========================================================
+   FOOTER
+========================================================= */
+
+        footer {
+            position: relative;
+
+            z-index: 5;
+
+            padding:
+                35px 20px;
+            text-align: center;
+
+            background:
+                rgba(178, 116, 124, 0.60);
+            color:
+                rgba(255, 255, 255, 0.85);
+            font-size: 0.72rem;
+        }
+
+        footer a {
+            color: #fff0ed;
+            text-decoration: none;
+        }
+
+
+        /* =========================================================
+   MOBILE
+========================================================= */
+
+        @media (max-width: 700px) {
+            body {
+                /*
+           Das Bild wird auf dem Handy etwas
+           nach links verschoben, damit die
+           Ringe im Fokus bleiben.
+        */
+                background-attachment: scroll;
+                background-position:
+                    35% center;
+            }
+
+            .vine-left,
+            .vine-right {
+                opacity: 0.18;
+                width: 70px;
+            }
+
+
+            #mainDisplay {
+                width: 94%;
+                margin-top: 20px;
+            }
+
+
+            #login {
+                padding:
+                    45px 18px 50px;
+                border-radius: 32px;
+            }
+
+
+
+
+            .personal-header {
+                padding:
+                    35px 15px;
+                border-radius: 32px;
+            }
+
+
+            .personal-small {
+
+
+                /*
+           Groß genug auf dem Handy
+        */
+                font-size: 3.2rem;
+            }
+
+
+
+
+            .personal-title {
+                font-size: 4rem;
+            }
+
+
+
+
+            .content-card {
+                padding:
+                    40px 20px;
+
+                border-radius: 32px;
+            }
+
+
+
+
+            .content-card h2 {
+
+                font-size: 3.5rem;
+            }
+
+
+
+
+            .daten-container {
+
+                grid-template-columns: 1fr;
+            }
+
+
+
+
+            nav {
+
+                gap: 8px;
+            }
+
+
+
+
+            nav button {
+                flex:
+                    1 1 43%;
+
+                padding:
+                    11px 8px;
+            }
+
+
+
+            .maps iframe {
+                height: 280px;
+                border-radius: 22px;
+            }
+
+
+
+
+            .absage {
+                padding:
+                    28px 18px;
+            }
+
+            .absage h3 {
+                font-size: 2.8rem;
+            }
+        }
+
+
+
+
+        /* =========================================================
+   SEHR KLEINE HANDYS
+========================================================= */
+
+        @media (max-width: 380px) {
+
+            .personal-small {
+                font-size: 2.8rem;
+            }
+
+
+            .personal-title {
+                font-size: 3.5rem;
+            }
+
+            nav button {
+                font-size: 0.63rem;
+                padding:
+                    10px 5px;
+            }
+        }
+    </style>
+</head>
+
+
+
+
+<body>
+
+    <!-- Dekorative Ranken -->
+    <div class="vine-left"></div>
+    <div class="vine-right"></div>
+
+
+
+
+    <!-- =======================================================
+     HEADER
+======================================================== -->
+
+
+    <header>
+        <div class="header-small">
+            Einladung
+        </div>
+
+        <h1 class="header-title">
+            Unsere Hochzeit
+        </h1>
+
+        <div class="header-ornament">
+            ❦
+        </div>
+    </header>
+
+
+
+    <!-- =======================================================
+     HAUPTBEREICH
+======================================================== -->
+
+
+    <main id="mainDisplay">
+        <!-- ===================================================
+         STARTSEITE
+    ==================================================== -->
+
+
+        <div id="login">
+
+            <div class="welcome-small">
+                Wir sagen Ja
+            </div>
+
+            <div class="welcome-title">
+                Timm
+            </div>
+
+            <div class="welcome-and">
+                &
+            </div>
+
+            <div class="welcome-title">
+                Julia
+            </div>
+
+            <div class="welcome-date">
+                11. September 2026
+            </div>
+
+
+
+
+            <p class="welcome-text">
+                Schön, dass du hier bist! 🌸
+                <br><br>
+                Gib bitte deinen Namen ein,
+                damit wir dich persönlich
+                zu unserer Hochzeit begrüßen
+                können.
+            </p>
+
+
+
+
+            <label class="name-label" for="nameInput">
+                Dein Name
+            </label>
+
+
+            <input type="text" id="nameInput" maxlength="15" placeholder="Vor- und Nachname">
+
+            <br>
+
+            <button class="main-button" onclick="nameLogIn()">
+                Einladung öffnen
+            </button>
+
+        </div>
+
+    </main>
+
+
+
+
+
+
+    <!-- =======================================================
+     FOOTER
+======================================================== -->
+
+
+    <footer>
+
+        <div class="footer-inner">
+
+            <a href="#impressum">
+                Impressum
+            </a>
+            &nbsp; | &nbsp;
+            <a href="#datenschutz">
+                Datenschutz
+            </a>
+
+            <br><br>
+            Timm & Julia · 2026
+
+        </div>
+
+    </footer>
+
+
+
+
+
+
+    <script>
+
+
+
+
+        /* =========================================================
+           LOGIN
+        ========================================================= */
+
+
+        function nameLogIn() {
+
+            const input =
+                document.getElementById("nameInput");
+
+            const personalizedName =
+                input.value.trim();
+
+            if (personalizedName === "") {
+
+                alert(
+                    "Bitte gib zuerst deinen Namen ein. 🌸"
+                );
+                return;
+            }
+
+            document.querySelector(
+                "#mainDisplay"
+            ).innerHTML = `
+
+
+        <!-- ===============================================
+             PERSONALISIERTER HEADER
+        ================================================ -->
+
+
+        <div class="personal-header">
+
+            <div class="personal-small">
+                Liebe/r
+                ${personalizedName}
+            </div>
+
+
+            <div class="personal-title">
+                Timm
+                <span>&</span>
+                Julia
+            </div>
+
+
+            <div class="personal-date">
+                11. September 2026
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <!-- ===============================================
+             NAVIGATION
+        ================================================ -->
+
+
+        <nav>
+
+            <button
+                onclick="showStart()">
+                ♡ Hochzeit
+            </button>
+
+
+            <button
+                onclick="showData()">
+                ❦ Ablauf
+            </button>
+
+
+            <button
+                onclick="showLocation()">
+                ♧ Anfahrt
+            </button>
+
+
+            <button
+                onclick="showCancellation()">
+                ♢ Absage
+            </button>
+
+
+            <button
+                onclick="showInformations()">
+                ♢ Wichtige Infos
+            </button>
+
+
+        </nav>
+
+
+        <section id="subDisplay"></section>
+
+
+    `;
+
+
+
+
+            showStart();
+
+
+        }
+
+
+
+
+
+
+        /* =========================================================
+           HOCHZEIT
+        ========================================================= */
+
+
+        function showStart() {
+
+
+            document.querySelector(
+                "#subDisplay"
+            ).innerHTML = `
+
+
+
+        <section class="content-card">
+
+
+            <h2>
+                Unsere Hochzeit
+            </h2>
+
+
+            <div class="daten-container">
+
+
+                <div class="daten">
+
+
+                    <h3>
+                        Wann?
+                    </h3>
+
+
+                    <p>
+                        Freitag, den
+                        11. September 2026
+
+
+                        <br><br>
+
+
+                        <strong>
+                            11:00 Uhr
+                        </strong>
+
+
+                    </p>
+
+
+
+
+                </div>
+
+
+
+
+
+
+                <div class="daten">
+
+                    <h3>
+                        Wo?
+                    </h3>
+
+                    <p>
+                        Rathaus Achstetten
+
+                        <br>
+
+                        Sitzungssaal
+                        Raum [2.1]
+                    </p>
+
+
+
+                </div>
+
+            </div>
+
+
+
+
+            <p style="margin-top:40px;">
+
+                Wir freuen uns riesig darauf,
+                diesen besonderen Tag
+                mit euch zu verbringen. 🤍
+
+            </p>
+
+
+
+
+        </section>
+
+
+    `;
+
+
+        }
+
+
+
+
+
+
+        /* =========================================================
+           ABLAUF
+        ========================================================= */
+
+
+        function showData() {
+
+
+            document.querySelector(
+                "#subDisplay"
+            ).innerHTML = `
+
+        <section class="content-card">
+
+
+
+            <h2>
+                Unser Tag
+            </h2>
+
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <div class="timeline-time">
+                        11:00 Uhr
+                    </div>
+
+
+                    <h3>
+                        Trauung
+                    </h3>
+
+
+                    <p>
+
+                        Im Sitzungssaal des
+                        Rathauses Achstetten.
+
+                    </p>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-time">
+                        anschließend
+                    </div>
+
+
+                    <h3>
+                        Sektempfang
+                    </h3>
+
+
+                    <p>
+
+                        Gemeinsam stoßen wir
+                        auf unsere Hochzeit an. 🥂
+
+                        <br>
+
+                        Im Rathaus bis ca. 12:00 Uhr.
+
+                    </p>
+
+
+                </div>
+
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-time">
+                        12:30 Uhr
+                    </div>
+
+
+                    <h3>
+                        Hochzeitsessen
+                    </h3>
+
+
+                    <p>
+
+                        Anschließend geht es
+                        gemeinsam zum Hochzeitsessen
+                        ins Restaurant
+                        „Babylon Laupheim“.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    `;
+
+
+        }
+
+
+
+
+
+
+        /* =========================================================
+           ANFAHRT
+        ========================================================= */
+
+
+        function showLocation() {
+
+
+            document.querySelector(
+                "#subDisplay"
+            ).innerHTML = `
+
+        <section class="content-card">
+
+
+            <h2>
+                Anfahrt
+            </h2>
+
+            <h3>
+                Rathaus Achstetten
+            </h3>
+
+            <p>
+                Adresse folgt.
+            </p>
+
+
+            <div class="maps">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2656.31200465257!2d9.894872876955462!3d48.25836997125724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479bd8ce145e8673%3A0xab29b3f6404d533f!2sRathaus!5e0!3m2!1sde!2sde!4v1787833311219!5m2!1sde!2sde"
+                    allowfullscreen
+                    loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+            </div>
+
+
+            <h3>
+                Restaurant
+            </h3>
+
+            <p>
+                 Babylon Laupheim <br>
+                 Kapellenstraße 75, <br>
+                 88471 Laupheim 
+            </p>
+
+            <div class="maps">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2656.31200465257!2d9.894872876955462!3d48.25836997125724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479bd8ce145e8673%3A0xab29b3f6404d533f!2sRathaus!5e0!3m2!1sde!2sde!4v1787833311219!5m2!1sde!2sde"
+                    allowfullscreen
+                    loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+            </div>
+        </section>
+
+
+    `;
+
+
+        }
+
+
+
+
+
+        /* =========================================================
+           ABSAGE
+        ========================================================= */
+
+
+        function showCancellation() {
+
+            document.querySelector(
+                "#subDisplay"
+            ).innerHTML = `
+
+
+        <section class="content-card">
+
+            <h2>
+                Absage
+            </h2>
+
+
+            <div class="absage">
+
+
+                <h3>
+                    Du möchtest absagen?
+                </h3>
+
+                <p>
+
+                    <strong>
+                        Süß. 🥰
+                    </strong>
+
+                    <br><br>
+
+                    Das funktioniert leider nicht.
+
+                    <br><br>
+
+                    Wir haben schließlich
+                    schon mit deinem Kommen
+                    gerechnet.
+
+                    <br><br>
+
+                    <strong>
+                        Wir sehen uns bei der
+                        Hochzeit! 💍
+                    </strong>
+
+                </p>
+
+            </div>
+
+        </section>
+
+    `;
+        }
+
+
+
+        /* ==========================================================
+           WICHTIGE INFOS
+        ========================================================== */
+
+
+        function showInformations() {
+
+            document.querySelector(
+                "#subDisplay"
+            ).innerHTML = `
+        <section
+            class="content-card">
+
+            <h2>
+                Wichtige Infos
+            </h2>
+            <ul
+                class="info-list">
+                <li>
+                    💌 Weitere Informationen
+                    folgen noch.
+                </li>
+
+                <li>
+                    👗 Dresscode:
+                    folgt noch.
+                </li>
+
+                <li>
+                    🎁 Geschenkwünsche:
+                    folgen noch.
+                </li>
+
+                <li>
+                    📸 Weitere Informationen
+                    zur Feier folgen ebenfalls.
+                </li>
+
+
+            </ul>
+
+        </section>
+
+    `;
+        }
+
+        /* -------------end of script ------------- */
+    </script>
+
+
+
+
+</body>
+
+
+</html>
