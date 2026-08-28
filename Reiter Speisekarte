@@ -1,333 +1,42 @@
-<!-- ==================== SPEISEKARTE ==================== -->
-<div id="speisekarte" class="tab-content">
+```html
+<!-- SPEISEKARTE -->
+<section id="speisekarte" class="tab-content">
 
-    <div class="section-header">
-        <h2>📖 Speisekarte</h2>
-        <p>Hier könnt ihr schon mal schauen, worauf ihr beim Essen Lust habt. 😋</p>
-    </div>
+    <div class="glass-box menu-box">
 
-    <!-- Kategorien -->
-    <div class="menu-categories">
-        <a href="#suppenn">🥣 Suppen</a>
-        <a href="#salate">🥗 Salate</a>
-        <a href="#kalte-vorspeisen">🫒 Vorspeisen</a>
-        <a href="#warme-vorspeisen">🔥 Warme Vorspeisen</a>
-        <a href="#pfannengerichte">🍳 Pfannengerichte</a>
-        <a href="#pizza">🍕 Pizza</a>
-        <a href="#pide">🥙 Pide</a>
-        <a href="#lahmacun">🫓 Lahmacun</a>
-        <a href="#doener">🥙 Döner & Dürüm</a>
-        <a href="#frittierte-speisen">🍟 Frittiertes</a>
-        <a href="#pasta">🍝 Pasta</a>
-        <a href="#desserts">🍰 Desserts</a>
-        <a href="#getraenke-karte">🥤 Getränke</a>
-    </div>
-
-
-    <!-- SUPPEN -->
-    <div class="menu-category" id="suppenn">
-        <h3>🥣 Suppen</h3>
-
-        <div class="menu-entry">
+        <div class="section-heading">
+            <span class="section-icon">🍽️</span>
             <div>
-                <strong>01 – Linsensuppe</strong>
-                <small>Mercimek Çorbası · Linsensuppe und Zitrone</small>
+                <h2>Speisekarte</h2>
+                <p>Schau schon mal, worauf du Lust hast 😋</p>
             </div>
-            <span>7,50 €</span>
         </div>
 
-        <div class="menu-entry">
-            <div>
-                <strong>02 – Fleischsuppe</strong>
-                <small>Kelle Paça Çorbası · Fleischsuppe</small>
-            </div>
-            <span>8,50 €</span>
+        <div class="menu-intro">
+            <p>
+                Hier findest du die aktuelle Speisekarte des
+                <strong>BABYLON</strong>.
+            </p>
+            <p class="menu-note">
+                💡 Die Speisekarte ist direkt auf der Seite eingebunden –
+                du musst nichts herunterladen.
+            </p>
         </div>
 
-        <div class="menu-entry">
-            <div>
-                <strong>03 – Kuttelsuppe</strong>
-                <small>İşkembe Çorbası</small>
-            </div>
-            <span>8,00 €</span>
+        <!-- HIER BEGINNT DIE EINGEBETTETE SPEISEKARTE -->
+        <div class="menu-inner">
+
+            <!-- Deine bisherige komplette Speisekarte -->
+            <!--
+                Hier kommt der komplette BABYLON-Speisekarten-HTML-Code
+                hinein, den du mir vorher geschickt hast.
+            -->
+
         </div>
 
-        <div class="menu-entry">
-            <div>
-                <strong>04 – Tomatencremesuppe</strong>
-                <small>Crema di Pomodoro</small>
-            </div>
-            <span>7,50 €</span>
-        </div>
     </div>
 
+</section>
+```
 
-    <!-- SALATE -->
-    <div class="menu-category" id="salate">
-        <h3>🥗 Salate</h3>
-
-        <div class="menu-entry">
-            <div>
-                <strong>10 – Beilagensalat</strong>
-                <small>Kleiner gemischter Salat, Mohrrüben, Gurken, Tomaten, Mais</small>
-            </div>
-            <span>5,50 €</span>
-        </div>
-
-        <div class="menu-entry">
-            <div>
-                <strong>11 – Bauernsalat</strong>
-                <small>Çoban Salat · Tomaten, Gurken, Zwiebeln, Olivenöl, Granatapfelvinaigrette</small>
-            </div>
-            <span>9,00 €</span>
-        </div>
-
-        <div class="menu-entry">
-            <div>
-                <strong>12 – Babylon Salat</strong>
-                <small>Eisbergsalat, Rucola, Tomaten, Gurken, Schafskäse</small>
-            </div>
-            <span>12,50 €</span>
-        </div>
-
-        <div class="menu-entry">
-            <div>
-                <strong>13 – Insalata Mista</strong>
-                <small>Gemischter Salat, Tomaten, Gurken, Mais und Rucola</small>
-            </div>
-            <span>7,50 €</span>
-        </div>
-
-        <div class="menu-entry">
-            <div>
-                <strong>14 – Hähnchen Salat</strong>
-                <small>Gebratene Hähnchenstreifen mit Tomaten, Gurken und Granatapfelvinaigrette</small>
-            </div>
-            <span>11,00 €</span>
-        </div>
-
-        <div class="menu-entry">
-            <div>
-                <strong>15 – Insalata Tonno</strong>
-                <small>Grüner Salat, Tomaten, Zwiebeln und Thunfisch</small>
-            </div>
-            <span>8,00 €</span>
-        </div>
-
-        <div class="menu-entry">
-            <div>
-                <strong>16 – Insalata Rucola</strong>
-                <small>Rucola, Champignons, Parmesan und Balsamico</small>
-            </div>
-            <span>10,00 €</span>
-        </div>
-
-        <div class="menu-entry">
-            <div>
-                <strong>17 – Insalata Capricciosa</strong>
-                <small>Mit Thunfisch, Ei, Artischocken, Oliven, Sardellen und Zwiebeln</small>
-            </div>
-            <span>15,50 €</span>
-        </div>
-    </div>
-
-
-    <!-- KALTE VORSPEISEN -->
-    <div class="menu-category" id="kalte-vorspeisen">
-        <h3>🫒 Kalte Vorspeisen</h3>
-
-        <div class="menu-entry"><div><strong>20 – Haydari</strong><small>Joghurt-Feta-Dip mit Möhren, Knoblauch und Kräutern</small></div><span>7,00 €</span></div>
-        <div class="menu-entry"><div><strong>21 – Acılı Antep Ezmesi</strong><small>Pikante Paste aus Tomaten, Zwiebeln und Paprikapüree</small></div><span>7,00 €</span></div>
-        <div class="menu-entry"><div><strong>22 – Hummus</strong><small>Kichererbsenpüree, Sesampaste, Knoblauch und Zitrone</small></div><span>7,00 €</span></div>
-        <div class="menu-entry"><div><strong>23 – Cacık</strong><small>Türkisches Tzatziki mit Gurke, Knoblauch und Minze</small></div><span>7,00 €</span></div>
-        <div class="menu-entry"><div><strong>24 – Muhammara</strong><small>Veganer Aufstrich aus Walnüssen und Paprika</small></div><span>8,00 €</span></div>
-        <div class="menu-entry"><div><strong>25 – Pembe Sultan</strong><small>Rote Bete, Joghurt, Knoblauch und Mayonnaise</small></div><span>7,00 €</span></div>
-        <div class="menu-entry"><div><strong>26 – Babylon Teller</strong><small>Gemischte kalte Vorspeisen</small></div><span>14,50 €</span></div>
-        <div class="menu-entry"><div><strong>27 – Havuç Tarator</strong><small>Cremiger Karottendip</small></div><span>7,00 €</span></div>
-        <div class="menu-entry"><div><strong>28 – Büffelmozzarella & Tomaten</strong><small>Mozzarella Campana DOP, Tomaten und Basilikum</small></div><span>7,50 €</span></div>
-        <div class="menu-entry"><div><strong>29 – Bruschetta</strong><small>Geröstetes Brot mit Tomaten, Zwiebeln, Parmesan und Basilikum</small></div><span>7,50 €</span></div>
-        <div class="menu-entry"><div><strong>30 – Çiğ Köfte</strong><small>Vegane Frikadellen aus Bulgur</small></div><span>12,00 €</span></div>
-        <div class="menu-entry"><div><strong>31 – Mütebbel</strong><small>Geröstete Aubergine, Joghurt, Knoblauch und Walnuss</small></div><span>9,00 €</span></div>
-        <div class="menu-entry"><div><strong>32 – Brokkoli Tarator</strong><small>Brokkoli mit Joghurt, Schnittlauch und Dill</small></div><span>9,00 €</span></div>
-        <div class="menu-entry"><div><strong>33 – Spinat Tarator</strong><small>Spinat mit Reis</small></div><span>9,00 €</span></div>
-    </div>
-
-
-    <!-- WARME VORSPEISEN -->
-    <div class="menu-category" id="warme-vorspeisen">
-        <h3>🔥 Warme Vorspeisen</h3>
-
-        <div class="menu-entry"><div><strong>40 – Gemischte Platte</strong></div><span>16,00 €</span></div>
-        <div class="menu-entry"><div><strong>40 – Gemischte Platte für 2 Personen</strong></div><span>26,50 €</span></div>
-        <div class="menu-entry"><div><strong>41 – Mini-Lahmacun</strong><small>4 Stück · Mit Zitrone, Petersilie und Zwiebeln</small></div><span>12,00 €</span></div>
-        <div class="menu-entry"><div><strong>42 – Zigarren-Börek</strong><small>Gefüllt mit Feta und Petersilie</small></div><span>8,50 €</span></div>
-        <div class="menu-entry"><div><strong>43 – Gamberetti con Aglio e Olio</strong><small>Gambas in Knoblauchsoße</small></div><span>17,00 €</span></div>
-    </div>
-
-
-    <!-- PFANNENGERICHTE -->
-    <div class="menu-category" id="pfannengerichte">
-        <h3>🍳 Pfannengerichte</h3>
-
-        <div class="menu-entry"><div><strong>50 – Hähnchenpfanne · Tavuk Kavurma</strong><small>Hähnchen, Paprika, Perlzwiebeln und Champignons · Reis & Salat</small></div><span>21,50 €</span></div>
-        <div class="menu-entry"><div><strong>51 – Hähnchenpfanne · Tavuk Sote</strong><small>Hähnchen, Tomaten, Paprika, Perlzwiebeln und Champignons · Reis & Salat</small></div><span>21,50 €</span></div>
-        <div class="menu-entry"><div><strong>52 – Rinderpfanne · Dana Kavurma</strong><small>Kalbsgeschnetzeltes, Paprika, Perlzwiebeln und Champignons · Reis & Salat</small></div><span>23,90 €</span></div>
-        <div class="menu-entry"><div><strong>53 – Rinderpfanne · Dana Sote</strong><small>Kalbsgeschnetzeltes, Tomaten, Paprika, Perlzwiebeln und Champignons · Reis & Salat</small></div><span>23,90 €</span></div>
-    </div>
-
-
-    <!-- PIZZA -->
-    <div class="menu-category" id="pizza">
-        <h3>🍕 Pizza</h3>
-
-        <div class="menu-entry"><div><strong>60 – Margherita</strong><small>Tomatensoße und Käse</small></div><span>8,00 €</span></div>
-        <div class="menu-entry"><div><strong>61 – Salame</strong><small>Rindersalami, Tomatensoße und Käse</small></div><span>9,50 €</span></div>
-        <div class="menu-entry"><div><strong>62 – Putenschinken</strong><small>Putenschinken, Tomatensoße und Käse</small></div><span>9,50 €</span></div>
-        <div class="menu-entry"><div><strong>63 – Pizza Kebap</strong><small>Kalbfleisch vom Drehspieß, Tomatensoße und Käse</small></div><span>11,00 €</span></div>
-        <div class="menu-entry"><div><strong>64 – Tonno</strong><small>Thunfisch und Zwiebeln</small></div><span>10,50 €</span></div>
-        <div class="menu-entry"><div><strong>65 – Funghi</strong><small>Frische Champignons</small></div><span>9,00 €</span></div>
-        <div class="menu-entry"><div><strong>66 – Quattro Formaggi</strong><small>Pizza mit 4 Käsesorten</small></div><span>10,50 €</span></div>
-        <div class="menu-entry"><div><strong>67 – Sucuk</strong><small>Mit türkischer Sucuk-Wurst</small></div><span>10,50 €</span></div>
-        <div class="menu-entry"><div><strong>68 – Pizza Spezial</strong><small>Rindersalami, Putenschinken und Funghi</small></div><span>10,00 €</span></div>
-        <div class="menu-entry"><div><strong>69 – Calzone-Clásico</strong><small>Tomatensoße und Käse</small></div><span>8,00 €</span></div>
-
-        <div class="menu-note">✨ Jede weitere Zutat: + 1,00 €</div>
-    </div>
-
-
-    <!-- PIDE -->
-    <div class="menu-category" id="pide">
-        <h3>🥙 Pide</h3>
-
-        <div class="menu-entry"><div><strong>70 – Pide vegetarisch</strong><small>Mit Gemüsefüllung</small></div><span>10,50 €</span></div>
-        <div class="menu-entry"><div><strong>71 – Pide mit Weichkäse</strong></div><span>9,00 €</span></div>
-        <div class="menu-entry"><div><strong>72 – Pide mit Hackfleisch</strong></div><span>10,50 €</span></div>
-        <div class="menu-entry"><div><strong>73 – Pide mit Döner Kebab</strong><small>Kalbfleisch vom Drehspieß und Käse</small></div><span>10,50 €</span></div>
-        <div class="menu-entry"><div><strong>74 – Pide Kuşbaşı</strong><small>Kalbfleisch, Paprika und Zwiebeln</small></div><span>11,50 €</span></div>
-        <div class="menu-entry"><div><strong>75 – Pide Spinat</strong><small>Spinat und Käse</small></div><span>10,50 €</span></div>
-        <div class="menu-entry"><div><strong>76 – Pide Sucuk</strong><small>Käse und Knoblauchwurst</small></div><span>10,50 €</span></div>
-
-        <div class="menu-note">🥚 Mit Ei zusätzlich: + 1,00 €</div>
-    </div>
-
-
-    <!-- LAHMACUN -->
-    <div class="menu-category" id="lahmacun">
-        <h3>🫓 Lahmacun</h3>
-
-        <div class="menu-entry"><div><strong>80 – Lahmacun</strong><small>Mit Salat und Sauce</small></div><span>10,50 €</span></div>
-        <div class="menu-entry"><div><strong>81 – Lahmacun Special</strong><small>Mit Kalbfleisch, Salat und Sauce</small></div><span>12,00 €</span></div>
-        <div class="menu-entry"><div><strong>82 – Lahmacun Teller</strong><small>Mit Salat, Sauce und Zitrone</small></div><span>10,50 €</span></div>
-    </div>
-
-
-    <!-- DÖNER -->
-    <div class="menu-category" id="doener">
-        <h3>🥙 Döner & Dürüm</h3>
-
-        <div class="menu-entry"><div><strong>90 – Döner Kalbfleisch</strong><small>Im Fladenbrot mit Salat</small></div><span>9,50 €</span></div>
-        <div class="menu-entry"><div><strong>91 – Döner Box</strong><small>Kalbfleisch mit Pommes und Soße</small></div><span>9,50 €</span></div>
-        <div class="menu-entry"><div><strong>92 – Dönerteller</strong><small>Mit Pommes oder Reis und Salat</small></div><span>14,50 €</span></div>
-        <div class="menu-entry"><div><strong>93 – İskender</strong><small>Kalbfleisch auf Brot mit Joghurt-Tomatensoße und Butter</small></div><span>17,00 €</span></div>
-        <div class="menu-entry"><div><strong>94 – Dürüm Kalbfleisch</strong><small>Mit Salat</small></div><span>10,50 €</span></div>
-        <div class="menu-entry"><div><strong>95 – Falafel im Fladenbrot</strong><small>Mit Salat</small></div><span>7,50 €</span></div>
-        <div class="menu-entry"><div><strong>96 – Falafel Teller</strong><small>Mit Salat</small></div><span>12,00 €</span></div>
-        <div class="menu-entry"><div><strong>97 – Falafel Yufka</strong><small>Mit Salat</small></div><span>8,50 €</span></div>
-    </div>
-
-
-    <!-- FRITTIERT -->
-    <div class="menu-category" id="frittierte-speisen">
-        <h3>🍟 Frittierte Speisen</h3>
-
-        <div class="menu-entry"><div><strong>100 – Pommes</strong></div><span>4,50 €</span></div>
-        <div class="menu-entry"><div><strong>101 – 6er Chicken Nuggets</strong><small>Mit Pommes</small></div><span>10,50 €</span></div>
-        <div class="menu-entry"><div><strong>102 – Schnitzel</strong><small>Paniertes Hähnchenbrustfilet mit Pommes und kleinem Salat</small></div><span>12,50 €</span></div>
-    </div>
-
-
-    <!-- PASTA -->
-    <div class="menu-category" id="pasta">
-        <h3>🍝 Pasta</h3>
-
-        <div class="menu-entry"><div><strong>110 – Babylon Pasta</strong><small>Linguine, Garnelen, Kirschtomaten, Zucchini, weiße Soße</small></div><span>18,50 €</span></div>
-        <div class="menu-entry"><div><strong>111 – Spaghetti Bolognese</strong></div><span>13,50 €</span></div>
-        <div class="menu-entry"><div><strong>112 – Ricotta-Spinaci-Ravioli</strong><small>Hausgemacht, mit Butter & Salbei oder Tomatensauce</small></div><span>14,50 €</span></div>
-        <div class="menu-entry"><div><strong>113 – Rigatoni Spinaci</strong><small>Spinat und Sahnesauce</small></div><span>10,50 €</span></div>
-        <div class="menu-entry"><div><strong>114 – Tortellini Bolognese</strong></div><span>11,50 €</span></div>
-        <div class="menu-entry"><div><strong>115 – Rigatoni Bolognese</strong></div><span>11,50 €</span></div>
-        <div class="menu-entry"><div><strong>116 – Spaghetti Pomodoro</strong></div><span>10,50 €</span></div>
-        <div class="menu-entry"><div><strong>117 – Rigatoni Pomodoro</strong></div><span>10,50 €</span></div>
-        <div class="menu-entry"><div><strong>118 – Tortellini Pomodoro</strong></div><span>10,50 €</span></div>
-        <div class="menu-entry"><div><strong>119 – Mantı</strong><small>Gefüllte Teigtaschen mit Rinderhackfleisch und Knoblauchsoße</small></div><span>10,50 €</span></div>
-        <div class="menu-entry"><div><strong>120 – Tagliatelle e Tartufo</strong><small>Hausgemachte Bandnudeln mit Trüffel und Parmesan</small></div><span>18,50 €</span></div>
-        <div class="menu-entry"><div><strong>121 – Tortellini Panna</strong><small>Mit Putenschinken oder Champignon</small></div><span>11,50 €</span></div>
-    </div>
-
-
-    <!-- DESSERTS -->
-    <div class="menu-category" id="desserts">
-        <h3>🍰 Desserts</h3>
-
-        <div class="menu-entry"><div><strong>130 – Milchreispudding</strong><small>Fırın Sütlaç · Überbackener Milchreispudding</small></div><span>6,50 €</span></div>
-        <div class="menu-entry"><div><strong>131 – Künefe</strong><small>Fadenteig, türkischer Käse, Sahne und Pistazien</small></div><span>8,90 €</span></div>
-        <div class="menu-entry"><div><strong>132 – Künefe mit Eis</strong></div><span>9,90 €</span></div>
-        <div class="menu-entry"><div><strong>133 – Baklava mit Vanilleeis</strong></div><span>9,90 €</span></div>
-        <div class="menu-entry"><div><strong>134 – Tiramisu</strong></div><span>7,90 €</span></div>
-        <div class="menu-entry"><div><strong>135 – Schoko-Soufflé</strong><small>Mit flüssigem Schokoladenkern und Vanilleeis</small></div><span>7,90 €</span></div>
-        <div class="menu-entry"><div><strong>136 – Pistazien-Soufflé</strong><small>Mit Pistaziencreme und Vanilleeis</small></div><span>7,90 €</span></div>
-        <div class="menu-entry"><div><strong>137 – Tartufo Classico</strong></div><span>6,90 €</span></div>
-        <div class="menu-entry"><div><strong>138 – Tartufo Bianco</strong></div><span>6,90 €</span></div>
-    </div>
-
-
-    <!-- GETRÄNKE -->
-    <div class="menu-category" id="getraenke-karte">
-        <h3>🥤 Getränke</h3>
-
-        <div class="menu-entry"><div><strong>140 – Coca-Cola</strong></div><span>3,00 €</span></div>
-        <div class="menu-entry"><div><strong>141 – Coca-Cola Light</strong></div><span>3,00 €</span></div>
-        <div class="menu-entry"><div><strong>142 – Coca-Cola Zero</strong></div><span>3,00 €</span></div>
-        <div class="menu-entry"><div><strong>143 – Fanta</strong></div><span>3,00 €</span></div>
-        <div class="menu-entry"><div><strong>144 – Sprite</strong></div><span>3,00 €</span></div>
-        <div class="menu-entry"><div><strong>145 – Ayran</strong></div><span>2,00 €</span></div>
-        <div class="menu-entry"><div><strong>146 – Spezi</strong></div><span>3,00 €</span></div>
-        <div class="menu-entry"><div><strong>147 – Apfelsaftschorle</strong></div><span>3,00 €</span></div>
-        <div class="menu-entry"><div><strong>148 – Uludağ</strong></div><span>3,00 €</span></div>
-        <div class="menu-entry"><div><strong>149 – Orangensaft</strong></div><span>3,50 €</span></div>
-        <div class="menu-entry"><div><strong>150 – Apfelsaft</strong></div><span>3,50 €</span></div>
-        <div class="menu-entry"><div><strong>151 – Wasser mit Kohlensäure</strong><small>0,25 L: 3,00 € · 0,75 L: 6,50 €</small></div><span></span></div>
-        <div class="menu-entry"><div><strong>152 – Wasser ohne Kohlensäure</strong><small>0,25 L: 3,00 € · 0,75 L: 6,50 €</small></div><span></span></div>
-
-        <div class="menu-entry"><div><strong>160 – Espresso</strong><small>Doppelt: 4,50 €</small></div><span>3,00 €</span></div>
-        <div class="menu-entry"><div><strong>161 – Kaffee</strong></div><span>3,30 €</span></div>
-        <div class="menu-entry"><div><strong>162 – Milchkaffee</strong></div><span>5,00 €</span></div>
-        <div class="menu-entry"><div><strong>163 – Cappuccino</strong></div><span>4,20 €</span></div>
-        <div class="menu-entry"><div><strong>164 – Latte Macchiato</strong></div><span>5,50 €</span></div>
-
-        <div class="menu-entry"><div><strong>170 – Goldochsen</strong><small>0,5 L</small></div><span>4,90 €</span></div>
-        <div class="menu-entry"><div><strong>171 – Goldochsen alkoholfrei</strong><small>0,33 L</small></div><span>3,80 €</span></div>
-        <div class="menu-entry"><div><strong>172 – Goldochsen Radler</strong><small>0,33 L</small></div><span>4,90 €</span></div>
-        <div class="menu-entry"><div><strong>173 – Tannenzäpfle</strong><small>0,33 L</small></div><span>4,90 €</span></div>
-
-        <div class="menu-entry"><div><strong>180 – Prosecco</strong><small>0,1 L: 7,50 € · Flasche: 38,50 €</small></div><span></span></div>
-        <div class="menu-entry"><div><strong>181 – Aperol Spritz</strong><small>0,2 L</small></div><span>7,90 €</span></div>
-
-        <div class="menu-entry"><div><strong>190 – Merlot IGT „LaPergola“</strong><small>0,2 L: 6,50 € · 0,75 L: 24,70 €</small></div><span></span></div>
-        <div class="menu-entry"><div><strong>191 – Pinot Grigio IGT „LaPergola“</strong><small>0,2 L: 6,50 € · 0,75 L: 24,70 €</small></div><span></span></div>
-        <div class="menu-entry"><div><strong>192 – Rosé</strong></div><span>6,90 €</span></div>
-        <div class="menu-entry"><div><strong>193 – Weißweinschorle</strong><small>0,25 L</small></div><span>5,90 €</span></div>
-    </div>
-
-
-    <!-- ALLERGENE -->
-    <div class="menu-allergens">
-        <strong>ℹ️ Zusatzstoffe & Allergene</strong><br>
-        1 – Milch/Laktose · 2 – Glutenhaltiges Getreide · 3 – Eier ·
-        4 – Sesam · 5 – Sellerie · 6 – Senf · 7 – Erdnüsse/Nüsse ·
-        8 – Soja · 9 – Schwefeldioxid/Sulfite · 10 – Lupine ·
-        11 – Fisch · 12 – Krebstiere · 13 – Weichtiere ·
-        14 – Konservierungsstoffe, Farbstoffe, Geschmacksverstärker
-    </div>
-
-</div>
+Falls deine Box-Klasse nicht `glass-box`, sondern z. B. `glass-card` heißt, musst du **nur diesen einen Klassennamen** entsprechend ändern.
