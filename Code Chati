@@ -1398,7 +1398,139 @@
 
         }
 
+/* =========================================================
+   ESSEN
+========================================================= */
 
+.food-selection {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    max-width: 600px;
+
+    margin: 30px auto;
+
+}
+
+
+.food-option {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 65px;
+
+    padding: 15px 20px;
+
+    cursor: pointer;
+
+    background:
+        rgba(255, 255, 255, 0.25);
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.50);
+
+    border-radius: 25px;
+
+    transition:
+        all 0.25s ease;
+
+}
+
+
+.food-option:hover {
+
+    background:
+        rgba(255, 255, 255, 0.42);
+
+    transform:
+        translateY(-2px);
+
+}
+
+
+.food-option input {
+
+    width: 18px;
+
+    height: 18px;
+
+    margin-right: 12px;
+
+    accent-color:
+        var(--rosa-dunkel);
+
+}
+
+
+.food-option span {
+
+    font-family:
+        'Cormorant Garamond',
+        serif;
+
+    font-size: 1.35rem;
+
+    color:
+        var(--braun);
+
+}
+
+
+.food-note {
+
+    max-width: 650px;
+
+    margin: 35px auto;
+
+    padding: 25px;
+
+    background:
+        rgba(194, 127, 136, 0.16);
+
+    border:
+        1px solid
+        rgba(173, 104, 114, 0.30);
+
+    border-radius: 28px;
+
+    line-height: 1.8;
+
+}
+
+
+.food-success {
+
+    padding: 25px;
+
+    border-radius: 25px;
+
+    background:
+        rgba(194, 127, 136, 0.18);
+
+    border:
+        1px solid
+        rgba(173, 104, 114, 0.30);
+
+}
+
+
+#foodSubmit:disabled {
+
+    opacity: 0.65;
+
+    cursor:
+        not-allowed;
+
+}
 
         /* =====================================================
            INFO-LISTE
@@ -1998,6 +2130,11 @@
 
                     </button>
 
+                    <button onclick="showFood()">
+                        
+                        🍽️ Essen
+                    
+                    </button>
 
                     <button
                         onclick="showCancellation()">
@@ -2722,7 +2859,244 @@
 
         }
 
+/* =========================================================
+   ESSEN
+========================================================= */
 
+function showFood() {
+
+    document.querySelector("#subDisplay").innerHTML = `
+
+        <section class="content-card">
+
+            <h2>
+                Hochzeitsessen
+            </h2>
+
+            <p>
+                Nach der Trauung möchten wir den Tag
+                gerne bei einem gemeinsamen Essen
+                ausklingen lassen. 🍽️
+            </p>
+
+            <br>
+
+            <h3>
+                Kommst du mit zum Essen?
+            </h3>
+
+
+            <div class="food-selection">
+
+                <label class="food-option">
+
+                    <input
+                        type="radio"
+                        name="food"
+                        value="ja">
+
+                    <span>
+                        Ja, ich komme mit! 🍽️
+                    </span>
+
+                </label>
+
+
+                <label class="food-option">
+
+                    <input
+                        type="radio"
+                        name="food"
+                        value="nein">
+
+                    <span>
+                        Nein, ich komme nicht mit.
+                    </span>
+
+                </label>
+
+            </div>
+
+
+            <div class="food-note">
+
+                <strong>
+                    🍴 Kleiner Hinweis für den hungrigen Teil des Tages:
+                </strong>
+
+                <br><br>
+
+                Wir heiraten zwar,
+                aber wir eröffnen an diesem Tag
+                leider kein Restaurant. 😂
+
+                <br><br>
+
+                Daher bezahlt bitte euer Essen
+                selbst.
+
+                <br><br>
+
+                Wir kümmern uns dafür sehr gerne
+                um die Hochzeit, den Sektempfang
+                und die gute Laune. 🥂💕
+
+            </div>
+
+
+            <button
+                id="foodSubmit"
+                class="main-button"
+                onclick="submitFood()">
+
+                Auswahl bestätigen 🍽️
+
+            </button>
+
+
+            <div
+                id="foodMessage"
+                style="margin-top:25px;">
+            </div>
+
+        </section>
+
+    `;
+}
+
+/* =========================================================
+   ESSEN ABSENDEN
+========================================================= */
+
+async function submitFood() {
+
+    const selected =
+        document.querySelector(
+            'input[name="food"]:checked'
+        );
+
+    const button =
+        document.getElementById("foodSubmit");
+
+    const message =
+        document.getElementById("foodMessage");
+
+
+    if (!selected) {
+
+        message.innerHTML = `
+            <p>
+                Bitte wählt kurz aus,
+                ob ihr mit zum Essen kommt. 🌸
+            </p>
+        `;
+
+        return;
+    }
+
+
+    button.disabled = true;
+
+    button.innerText =
+        "Wird gespeichert …";
+
+
+    try {
+
+        const response =
+            await fetch(
+                GOOGLE_SCRIPT_URL,
+                {
+                    method: "POST",
+
+                    body: JSON.stringify({
+
+                        drinks: [],
+
+                        essen: selected.value
+
+                    })
+                }
+            );
+
+
+        const result =
+            await response.json();
+
+
+        if (!result.success) {
+            throw new Error(
+                "Serverfehler"
+            );
+        }
+
+
+        document.querySelectorAll(
+            'input[name="food"]'
+        ).forEach(
+            radio => radio.disabled = true
+        );
+
+
+        button.style.display = "none";
+
+
+        message.innerHTML = `
+
+            <div class="food-success">
+
+                <strong>
+                    Perfekt! 🍽️💕
+                </strong>
+
+                <br><br>
+
+                Eure Antwort ist angekommen.
+
+                <br><br>
+
+                Wir freuen uns auf euch! 🥂
+
+            </div>
+
+        `;
+
+
+    } catch (error) {
+
+        console.error(error);
+
+
+        button.disabled = false;
+
+        button.innerText =
+            "Auswahl bestätigen 🍽️";
+
+
+        message.innerHTML = `
+
+            <p>
+
+                <strong>
+                    Huch! 😳
+                </strong>
+
+                <br><br>
+
+                Die Antwort konnte gerade
+                nicht gespeichert werden.
+
+                <br><br>
+
+                Bitte versucht es noch einmal.
+
+            </p>
+
+        `;
+
+    }
+
+}
 
         /* =====================================================
            ABSAGE
