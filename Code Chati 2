@@ -1333,7 +1333,7 @@
     font-size: 1.6rem;
     font-weight: 600;
 
-    color: var(--rosa-dunkel);
+    color: var(--gold);
 
     background:
         rgba(255, 245, 242, 0.55);
