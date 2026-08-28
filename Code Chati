@@ -1,32 +1,44 @@
-```html
 <!DOCTYPE html>
 <html lang="de">
 
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Timm & Julia – Hochzeit</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <meta name="description"
-        content="Einladung zur Hochzeit von Timm & Julia">
+    <title>
+        Timm & Julia – Hochzeit
+    </title>
+
+    <meta
+        name="description"
+        content="Einladung zur Hochzeit von Timm & Julia"
+    >
 
 
     <!-- =====================================================
          SCHRIFTEN
     ====================================================== -->
 
-    <link rel="preconnect"
-        href="https://fonts.googleapis.com">
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
 
-    <link rel="preconnect"
+    <link
+        rel="preconnect"
         href="https://fonts.gstatic.com"
-        crossorigin>
+        crossorigin
+    >
 
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"
+    >
 
 
     <style>
@@ -38,12 +50,15 @@
         :root {
 
             --rosa: #c27f88;
+
             --rosa-dunkel: #ad6872;
+
             --rosa-hell: #e4b9bd;
 
             --beige: #f4e7dc;
 
             --gruen: #899783;
+
             --gruen-dunkel: #687663;
 
             --braun: #68564f;
@@ -81,10 +96,6 @@
                 var(--braun);
 
 
-            /*
-             * Euer ursprüngliches Hintergrundbild
-             */
-
             background-image:
 
                 linear-gradient(
@@ -97,21 +108,26 @@
                 );
 
 
-            background-size: cover;
+            background-size:
+                cover;
+
 
             background-position:
                 center center;
 
-            background-repeat: no-repeat;
 
-            background-attachment: fixed;
+            background-repeat:
+                no-repeat;
+
+
+            background-attachment:
+                fixed;
 
         }
 
 
-
         /* =====================================================
-           DEZENTE RANKEN
+           RANKEN
         ====================================================== */
 
         .vine-left,
@@ -139,7 +155,7 @@
 
             border-left:
                 2px solid
-                rgba(104, 118, 99, 0.6);
+                rgba(104,118,99,0.6);
 
             border-radius:
                 0 0 0 90%;
@@ -157,7 +173,7 @@
 
             border-right:
                 2px solid
-                rgba(104, 118, 99, 0.6);
+                rgba(104,118,99,0.6);
 
             border-radius:
                 0 90% 0 0;
@@ -236,7 +252,6 @@
         }
 
 
-
         /* =====================================================
            HEADER
         ====================================================== */
@@ -253,24 +268,26 @@
             text-align: center;
 
             background:
-                rgba(178, 116, 124, 0.68);
+                rgba(178,116,124,0.68);
 
             border-bottom:
                 1px solid
-                rgba(255, 255, 255, 0.45);
+                rgba(255,255,255,0.45);
 
             box-shadow:
                 0 5px 25px
-                rgba(70, 50, 45, 0.12);
+                rgba(70,50,45,0.12);
 
         }
 
 
         .header-small {
 
-            font-size: 0.7rem;
+            font-size:
+                0.7rem;
 
-            letter-spacing: 5px;
+            letter-spacing:
+                5px;
 
             text-transform:
                 uppercase;
@@ -291,13 +308,20 @@
                 cursive;
 
             font-size:
-                clamp(3rem, 8vw, 4.6rem);
+                clamp(
+                    3rem,
+                    8vw,
+                    4.6rem
+                );
 
-            font-weight: 400;
+            font-weight:
+                400;
 
-            line-height: 1;
+            line-height:
+                1;
 
-            color: white;
+            color:
+                white;
 
         }
 
@@ -313,25 +337,28 @@
         }
 
 
-
         /* =====================================================
            HAUPTBEREICH
         ====================================================== */
 
         #mainDisplay {
 
-            position: relative;
+            position:
+                relative;
 
-            z-index: 3;
+            z-index:
+                3;
 
             width:
-                min(1050px, 94%);
+                min(
+                    1050px,
+                    94%
+                );
 
             margin:
                 35px auto 60px;
 
         }
-
 
 
         /* =====================================================
@@ -340,7 +367,8 @@
 
         #login {
 
-            position: relative;
+            position:
+                relative;
 
             max-width:
                 720px;
@@ -351,41 +379,68 @@
             padding:
                 50px 30px 55px;
 
-            text-align: center;
+            text-align:
+                center;
 
             background:
-                rgba(255, 242, 239, 0.34);
+                rgba(
+                    255,
+                    242,
+                    239,
+                    0.34
+                );
 
             border:
                 1px solid
-                rgba(255, 255, 255, 0.60);
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.60
+                );
 
             border-radius:
                 42px;
 
             box-shadow:
                 0 18px 50px
-                rgba(75, 55, 50, 0.12);
+                rgba(
+                    75,
+                    55,
+                    50,
+                    0.12
+                );
 
-            overflow: hidden;
+            overflow:
+                hidden;
 
         }
 
 
         #login::before {
 
-            content: "❦";
+            content:
+                "❦";
 
-            position: absolute;
+            position:
+                absolute;
 
-            left: 12px;
+            left:
+                12px;
 
-            top: 0;
+            top:
+                0;
 
-            font-size: 85px;
+            font-size:
+                85px;
 
             color:
-                rgba(194, 127, 136, 0.40);
+                rgba(
+                    194,
+                    127,
+                    136,
+                    0.40
+                );
 
             transform:
                 rotate(-25deg);
@@ -395,18 +450,28 @@
 
         #login::after {
 
-            content: "❦";
+            content:
+                "❦";
 
-            position: absolute;
+            position:
+                absolute;
 
-            right: 12px;
+            right:
+                12px;
 
-            bottom: 0;
+            bottom:
+                0;
 
-            font-size: 85px;
+            font-size:
+                85px;
 
             color:
-                rgba(137, 151, 131, 0.35);
+                rgba(
+                    137,
+                    151,
+                    131,
+                    0.35
+                );
 
             transform:
                 rotate(155deg);
@@ -414,18 +479,16 @@
         }
 
 
-
-        /* =====================================================
-           STARTSEITEN-TEXT
-        ====================================================== */
-
         .welcome-small {
 
-            margin-top: 10px;
+            margin-top:
+                10px;
 
-            font-size: 0.7rem;
+            font-size:
+                0.7rem;
 
-            letter-spacing: 5px;
+            letter-spacing:
+                5px;
 
             text-transform:
                 uppercase;
@@ -446,11 +509,17 @@
                 cursive;
 
             font-size:
-                clamp(4rem, 13vw, 6.5rem);
+                clamp(
+                    4rem,
+                    13vw,
+                    6.5rem
+                );
 
-            font-weight: 400;
+            font-weight:
+                400;
 
-            line-height: 0.85;
+            line-height:
+                0.85;
 
             color:
                 var(--braun);
@@ -511,14 +580,14 @@
         }
 
 
-
         /* =====================================================
            NAME
         ====================================================== */
 
         .name-label {
 
-            display: block;
+            display:
+                block;
 
             margin-bottom:
                 10px;
@@ -542,21 +611,31 @@
         #nameInput {
 
             width:
-                min(100%, 330px);
+                min(
+                    100%,
+                    330px
+                );
 
             padding:
                 14px 18px;
 
-            border: none;
+            border:
+                none;
 
             border-bottom:
                 1px solid
                 var(--rosa);
 
-            outline: none;
+            outline:
+                none;
 
             background:
-                rgba(255, 255, 255, 0.30);
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.30
+                );
 
             border-radius:
                 15px 15px 0 0;
@@ -574,9 +653,6 @@
             color:
                 var(--braun);
 
-            transition:
-                0.3s;
-
         }
 
 
@@ -586,22 +662,18 @@
                 var(--gruen);
 
             background:
-                rgba(255, 255, 255, 0.45);
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.45
+                );
 
         }
-
-
-        #nameInput::placeholder {
-
-            color:
-                rgba(104, 86, 79, 0.55);
-
-        }
-
 
 
         /* =====================================================
-           BUTTON
+           BUTTONS
         ====================================================== */
 
         .main-button {
@@ -612,13 +684,19 @@
             padding:
                 14px 34px;
 
-            border: none;
+            border:
+                none;
 
             border-radius:
                 30px;
 
             background:
-                rgba(173, 104, 114, 0.90);
+                rgba(
+                    173,
+                    104,
+                    114,
+                    0.90
+                );
 
             color:
                 white;
@@ -641,7 +719,12 @@
 
             box-shadow:
                 0 7px 20px
-                rgba(120, 80, 80, 0.15);
+                rgba(
+                    120,
+                    80,
+                    80,
+                    0.15
+                );
 
             transition:
                 all 0.3s ease;
@@ -652,7 +735,12 @@
         .main-button:hover {
 
             background:
-                rgba(137, 151, 131, 0.92);
+                rgba(
+                    137,
+                    151,
+                    131,
+                    0.92
+                );
 
             transform:
                 translateY(-2px);
@@ -663,16 +751,75 @@
         .main-button:disabled {
 
             opacity:
-                0.65;
+                0.55;
 
             cursor:
-                default;
-
-            transform:
-                none;
+                not-allowed;
 
         }
 
+
+        .undo-button {
+
+            margin-top:
+                15px;
+
+            padding:
+                11px 25px;
+
+            border:
+                1px solid
+                rgba(
+                    173,
+                    104,
+                    114,
+                    0.50
+                );
+
+            border-radius:
+                25px;
+
+            background:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.20
+                );
+
+            color:
+                var(--rosa-dunkel);
+
+            font-family:
+                'Montserrat',
+                sans-serif;
+
+            font-size:
+                0.7rem;
+
+            letter-spacing:
+                1px;
+
+            cursor:
+                pointer;
+
+            transition:
+                0.3s;
+
+        }
+
+
+        .undo-button:hover {
+
+            background:
+                rgba(
+                    173,
+                    104,
+                    114,
+                    0.15
+                );
+
+        }
 
 
         /* =====================================================
@@ -681,7 +828,8 @@
 
         .personal-header {
 
-            position: relative;
+            position:
+                relative;
 
             padding:
                 40px 25px;
@@ -690,18 +838,33 @@
                 center;
 
             background:
-                rgba(255, 242, 239, 0.34);
+                rgba(
+                    255,
+                    242,
+                    239,
+                    0.34
+                );
 
             border:
                 1px solid
-                rgba(255, 255, 255, 0.62);
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.62
+                );
 
             border-radius:
                 42px;
 
             box-shadow:
                 0 15px 40px
-                rgba(70, 55, 50, 0.10);
+                rgba(
+                    70,
+                    55,
+                    50,
+                    0.10
+                );
 
             overflow:
                 hidden;
@@ -727,7 +890,12 @@
                 60px;
 
             color:
-                rgba(194, 127, 136, 0.42);
+                rgba(
+                    194,
+                    127,
+                    136,
+                    0.42
+                );
 
             transform:
                 rotate(-20deg);
@@ -753,7 +921,12 @@
                 60px;
 
             color:
-                rgba(137, 151, 131, 0.35);
+                rgba(
+                    137,
+                    151,
+                    131,
+                    0.35
+                );
 
             transform:
                 rotate(160deg);
@@ -768,7 +941,11 @@
                 cursive;
 
             font-size:
-                clamp(3rem, 8vw, 4.5rem);
+                clamp(
+                    3rem,
+                    8vw,
+                    4.5rem
+                );
 
             line-height:
                 1.1;
@@ -789,7 +966,11 @@
                 cursive;
 
             font-size:
-                clamp(4rem, 11vw, 6rem);
+                clamp(
+                    4rem,
+                    11vw,
+                    6rem
+                );
 
             line-height:
                 0.95;
@@ -826,7 +1007,6 @@
         }
 
 
-
         /* =====================================================
            NAVIGATION
         ====================================================== */
@@ -861,13 +1041,23 @@
 
             border:
                 1px solid
-                rgba(173, 104, 114, 0.55);
+                rgba(
+                    173,
+                    104,
+                    114,
+                    0.55
+                );
 
             border-radius:
                 28px;
 
             background:
-                rgba(255, 242, 239, 0.38);
+                rgba(
+                    255,
+                    242,
+                    239,
+                    0.38
+                );
 
             color:
                 var(--braun);
@@ -894,7 +1084,12 @@
         nav button:hover {
 
             background:
-                rgba(173, 104, 114, 0.86);
+                rgba(
+                    173,
+                    104,
+                    114,
+                    0.86
+                );
 
             color:
                 white;
@@ -903,7 +1098,6 @@
                 translateY(-2px);
 
         }
-
 
 
         /* =====================================================
@@ -925,21 +1119,37 @@
                 center;
 
             background:
-                rgba(255, 242, 239, 0.32);
+                rgba(
+                    255,
+                    242,
+                    239,
+                    0.32
+                );
 
             border:
                 1px solid
-                rgba(255, 255, 255, 0.60);
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.60
+                );
 
             border-radius:
                 40px;
 
             box-shadow:
                 0 15px 45px
-                rgba(70, 55, 50, 0.09);
+                rgba(
+                    70,
+                    55,
+                    50,
+                    0.09
+                );
 
             animation:
-                fadeIn 0.45s ease;
+                fadeIn
+                0.45s ease;
 
         }
 
@@ -979,7 +1189,11 @@
                 cursive;
 
             font-size:
-                clamp(3.2rem, 9vw, 4.7rem);
+                clamp(
+                    3.2rem,
+                    9vw,
+                    4.7rem
+                );
 
             font-weight:
                 400;
@@ -1046,7 +1260,6 @@
         }
 
 
-
         /* =====================================================
            DATEN
         ====================================================== */
@@ -1057,7 +1270,10 @@
                 grid;
 
             grid-template-columns:
-                repeat(2, 1fr);
+                repeat(
+                    2,
+                    1fr
+                );
 
             gap:
                 22px;
@@ -1077,18 +1293,33 @@
                 28px 20px;
 
             background:
-                rgba(255, 255, 255, 0.25);
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.25
+                );
 
             border:
                 1px solid
-                rgba(255, 255, 255, 0.46);
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.46
+                );
 
             border-radius:
                 30px;
 
             box-shadow:
                 0 7px 20px
-                rgba(70, 55, 50, 0.05);
+                rgba(
+                    70,
+                    55,
+                    50,
+                    0.05
+                );
 
         }
 
@@ -1099,7 +1330,6 @@
                 0;
 
         }
-
 
 
         /* =====================================================
@@ -1130,7 +1360,12 @@
 
             border-left:
                 1px solid
-                rgba(194, 127, 136, 0.55);
+                rgba(
+                    194,
+                    127,
+                    136,
+                    0.55
+                );
 
         }
 
@@ -1171,7 +1406,12 @@
 
             box-shadow:
                 0 0 0 4px
-                rgba(255, 255, 255, 0.30);
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.30
+                );
 
         }
 
@@ -1191,7 +1431,6 @@
         }
 
 
-
         /* =====================================================
            ABSAGE
         ====================================================== */
@@ -1205,11 +1444,21 @@
                 30px 25px;
 
             background:
-                rgba(194, 127, 136, 0.20);
+                rgba(
+                    194,
+                    127,
+                    136,
+                    0.20
+                );
 
             border:
                 1px solid
-                rgba(173, 104, 114, 0.32);
+                rgba(
+                    173,
+                    104,
+                    114,
+                    0.32
+                );
 
             border-radius:
                 32px;
@@ -1252,7 +1501,6 @@
         }
 
 
-
         /* =====================================================
            MAPS
         ====================================================== */
@@ -1284,10 +1532,14 @@
 
             box-shadow:
                 0 10px 30px
-                rgba(70, 55, 50, 0.12);
+                rgba(
+                    70,
+                    55,
+                    50,
+                    0.12
+                );
 
         }
-
 
 
         /* =====================================================
@@ -1300,16 +1552,19 @@
                 grid;
 
             grid-template-columns:
-                repeat(2, 1fr);
+                repeat(
+                    2,
+                    1fr
+                );
 
             gap:
-                15px;
+                14px;
 
             max-width:
-                650px;
+                600px;
 
             margin:
-                35px auto;
+                30px auto;
 
         }
 
@@ -1325,34 +1580,37 @@
             justify-content:
                 center;
 
-            gap:
-                10px;
+            min-height:
+                65px;
 
             padding:
-                20px;
-
-            border-radius:
-                28px;
-
-            border:
-                1px solid
-                rgba(255, 255, 255, 0.50);
-
-            background:
-                rgba(255, 255, 255, 0.25);
-
-            font-family:
-                'Cormorant Garamond',
-                serif;
-
-            font-size:
-                1.35rem;
+                14px;
 
             cursor:
                 pointer;
 
+            background:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.24
+                );
+
+            border:
+                1px solid
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.50
+                );
+
+            border-radius:
+                25px;
+
             transition:
-                all 0.3s ease;
+                all 0.25s ease;
 
         }
 
@@ -1360,7 +1618,12 @@
         .drink-option:hover {
 
             background:
-                rgba(255, 255, 255, 0.40);
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.42
+                );
 
             transform:
                 translateY(-2px);
@@ -1376,191 +1639,209 @@
             height:
                 18px;
 
+            margin-right:
+                10px;
+
             accent-color:
                 var(--rosa-dunkel);
 
         }
 
 
-        .drink-option input:checked
-        ~ span {
+        .drink-option span {
 
-            color:
-                var(--rosa-dunkel);
-
-        }
-
-
-        .drink-icon {
+            font-family:
+                'Cormorant Garamond',
+                serif;
 
             font-size:
-                1.5rem;
+                1.3rem;
 
         }
 
-/* =========================================================
-   ESSEN
-========================================================= */
-
-.food-selection {
-
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 15px;
-
-    max-width: 600px;
-
-    margin: 30px auto;
-
-}
-
-
-.food-option {
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    min-height: 65px;
-
-    padding: 15px 20px;
-
-    cursor: pointer;
-
-    background:
-        rgba(255, 255, 255, 0.25);
-
-    border:
-        1px solid
-        rgba(255, 255, 255, 0.50);
-
-    border-radius: 25px;
-
-    transition:
-        all 0.25s ease;
-
-}
-
-
-.food-option:hover {
-
-    background:
-        rgba(255, 255, 255, 0.42);
-
-    transform:
-        translateY(-2px);
-
-}
-
-
-.food-option input {
-
-    width: 18px;
-
-    height: 18px;
-
-    margin-right: 12px;
-
-    accent-color:
-        var(--rosa-dunkel);
-
-}
-
-
-.food-option span {
-
-    font-family:
-        'Cormorant Garamond',
-        serif;
-
-    font-size: 1.35rem;
-
-    color:
-        var(--braun);
-
-}
-
-
-.food-note {
-
-    max-width: 650px;
-
-    margin: 35px auto;
-
-    padding: 25px;
-
-    background:
-        rgba(194, 127, 136, 0.16);
-
-    border:
-        1px solid
-        rgba(173, 104, 114, 0.30);
-
-    border-radius: 28px;
-
-    line-height: 1.8;
-
-}
-
-
-.food-success {
-
-    padding: 25px;
-
-    border-radius: 25px;
-
-    background:
-        rgba(194, 127, 136, 0.18);
-
-    border:
-        1px solid
-        rgba(173, 104, 114, 0.30);
-
-}
-
-
-#foodSubmit:disabled {
-
-    opacity: 0.65;
-
-    cursor:
-        not-allowed;
-
-}
 
         /* =====================================================
-           INFO-LISTE
+           ESSEN
         ====================================================== */
 
-        .info-list {
+        .food-selection {
+
+            display:
+                flex;
+
+            flex-direction:
+                column;
+
+            gap:
+                15px;
 
             max-width:
                 600px;
 
             margin:
-                auto;
-
-            padding:
-                0;
-
-            list-style:
-                none;
+                30px auto;
 
         }
 
 
-        .info-list li {
+        .food-option {
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            min-height:
+                65px;
 
             padding:
-                15px 10px;
+                15px 20px;
 
-            border-bottom:
+            cursor:
+                pointer;
+
+            background:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.25
+                );
+
+            border:
                 1px solid
-                rgba(194, 127, 136, 0.20);
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.50
+                );
+
+            border-radius:
+                25px;
+
+            transition:
+                all 0.25s ease;
+
+        }
+
+
+        .food-option:hover {
+
+            background:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.42
+                );
+
+            transform:
+                translateY(-2px);
+
+        }
+
+
+        .food-option input {
+
+            width:
+                18px;
+
+            height:
+                18px;
+
+            margin-right:
+                12px;
+
+            accent-color:
+                var(--rosa-dunkel);
+
+        }
+
+
+        .food-option span {
+
+            font-family:
+                'Cormorant Garamond',
+                serif;
+
+            font-size:
+                1.35rem;
+
+        }
+
+
+        .food-note {
+
+            max-width:
+                650px;
+
+            margin:
+                35px auto;
+
+            padding:
+                25px;
+
+            background:
+                rgba(
+                    194,
+                    127,
+                    136,
+                    0.16
+                );
+
+            border:
+                1px solid
+                rgba(
+                    173,
+                    104,
+                    114,
+                    0.30
+                );
+
+            border-radius:
+                28px;
+
+            line-height:
+                1.8;
+
+        }
+
+
+        .success-box {
+
+            margin:
+                25px auto;
+
+            padding:
+                25px;
+
+            max-width:
+                600px;
+
+            background:
+                rgba(
+                    194,
+                    127,
+                    136,
+                    0.17
+                );
+
+            border:
+                1px solid
+                rgba(
+                    173,
+                    104,
+                    114,
+                    0.30
+                );
+
+            border-radius:
+                25px;
 
             line-height:
                 1.7;
@@ -1568,13 +1849,18 @@
         }
 
 
-        .info-list li:last-child {
+        .error-box {
 
-            border-bottom:
-                none;
+            margin-top:
+                20px;
+
+            color:
+                var(--rosa-dunkel);
+
+            line-height:
+                1.7;
 
         }
-
 
 
         /* =====================================================
@@ -1596,10 +1882,20 @@
                 center;
 
             background:
-                rgba(178, 116, 124, 0.60);
+                rgba(
+                    178,
+                    116,
+                    124,
+                    0.60
+                );
 
             color:
-                rgba(255, 255, 255, 0.85);
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.85
+                );
 
             font-size:
                 0.72rem;
@@ -1618,7 +1914,6 @@
         }
 
 
-
         /* =====================================================
            MOBILE
         ====================================================== */
@@ -1629,10 +1924,6 @@
 
                 background-attachment:
                     scroll;
-
-                /*
-                 * Ringe bleiben auf dem Handy im Fokus
-                 */
 
                 background-position:
                     35% center;
@@ -1758,6 +2049,22 @@
             }
 
 
+            .drink-selection {
+
+                grid-template-columns:
+                    1fr;
+
+            }
+
+
+            .food-note {
+
+                padding:
+                    22px 17px;
+
+            }
+
+
             .absage {
 
                 padding:
@@ -1773,27 +2080,7 @@
 
             }
 
-
-            .drink-selection {
-
-                grid-template-columns:
-                    1fr;
-
-                gap:
-                    12px;
-
-            }
-
-
-            .drink-option {
-
-                padding:
-                    18px;
-
-            }
-
         }
-
 
 
         /* =====================================================
@@ -1835,17 +2122,16 @@
 </head>
 
 
-
 <body>
 
 
     <!-- =====================================================
-         DEKORATIVE RANKEN
+         RANKEN
     ====================================================== -->
 
     <div class="vine-left"></div>
-    <div class="vine-right"></div>
 
+    <div class="vine-right"></div>
 
 
     <!-- =====================================================
@@ -1858,18 +2144,15 @@
             Einladung
         </div>
 
-
         <h1 class="header-title">
             Unsere Hochzeit
         </h1>
-
 
         <div class="header-ornament">
             ❦
         </div>
 
     </header>
-
 
 
     <!-- =====================================================
@@ -1880,11 +2163,10 @@
 
 
         <!-- =================================================
-             STARTSEITE
+             LOGIN
         ================================================== -->
 
         <div id="login">
-
 
             <div class="welcome-small">
                 Wir sagen Ja
@@ -1927,10 +2209,9 @@
 
             <label
                 class="name-label"
-                for="nameInput">
-
+                for="nameInput"
+            >
                 Dein Name
-
             </label>
 
 
@@ -1938,7 +2219,8 @@
                 type="text"
                 id="nameInput"
                 maxlength="50"
-                placeholder="Vor- und Nachname">
+                placeholder="Vor- und Nachname"
+            >
 
 
             <br>
@@ -1946,17 +2228,14 @@
 
             <button
                 class="main-button"
-                onclick="nameLogIn()">
-
+                onclick="nameLogIn()"
+            >
                 Einladung öffnen
-
             </button>
-
 
         </div>
 
     </main>
-
 
 
     <!-- =====================================================
@@ -1986,33 +2265,47 @@
     </footer>
 
 
-
-    <!-- =====================================================
-         JAVASCRIPT
-    ====================================================== -->
-
     <script>
 
 
         /* =====================================================
-           GOOGLE APPS SCRIPT
+           GOOGLE APPS SCRIPT URL
         ====================================================== */
 
         const GOOGLE_SCRIPT_URL =
             "https://script.google.com/macros/s/AKfycbwa0ZzLQ7qTZv4TnXUwovWsbuF4D8sgG5hguOdeNQZSfImtQXWOV6fQy3zhsMllWWUS/exec";
 
 
+        /* =====================================================
+           ANONYME GÄSTE-ID
+        ====================================================== */
 
-        /*
-         * Wird verwendet, um den Namen während
-         * des Besuchs der Seite zu speichern.
-         *
-         * Der Name wird NICHT an Google Sheets
-         * übertragen.
-         */
+        function getGuestId() {
 
-        let guestName = "";
+            let guestId =
+                localStorage.getItem(
+                    "hochzeit_guest_id"
+                );
 
+
+            if (!guestId) {
+
+                guestId =
+                    "guest_" +
+                    crypto.randomUUID();
+
+
+                localStorage.setItem(
+                    "hochzeit_guest_id",
+                    guestId
+                );
+
+            }
+
+
+            return guestId;
+
+        }
 
 
         /* =====================================================
@@ -2044,21 +2337,12 @@
             }
 
 
-            guestName =
-                personalizedName;
-
-
             document.querySelector(
                 "#mainDisplay"
             ).innerHTML = `
 
 
-                <!-- =========================================
-                     PERSONALISIERTER HEADER
-                ========================================== -->
-
                 <div class="personal-header">
-
 
                     <div class="personal-small">
 
@@ -2092,71 +2376,55 @@
                 </div>
 
 
-
-                <!-- =========================================
-                     NAVIGATION
-                ========================================== -->
-
                 <nav>
 
                     <button
-                        onclick="showStart()">
-
+                        onclick="showStart()"
+                    >
                         ♡ Hochzeit
-
                     </button>
 
 
                     <button
-                        onclick="showData()">
-
+                        onclick="showData()"
+                    >
                         ❦ Ablauf
-
                     </button>
 
 
                     <button
-                        onclick="showLocation()">
-
+                        onclick="showLocation()"
+                    >
                         ♧ Anfahrt
-
                     </button>
 
 
                     <button
-                        onclick="showDrinks()">
-
-                        🥂 Getränke
-
-                    </button>
-
-                    <button onclick="showFood()">
-                        
-                        🍽️ Essen
-                    
-                    </button>
-
-                    <button
-                        onclick="showCancellation()">
-
+                        onclick="showCancellation()"
+                    >
                         ♢ Absage
-
                     </button>
 
 
                     <button
-                        onclick="showInformations()">
+                        onclick="showDrinks()"
+                    >
+                        🥂 Getränke
+                    </button>
 
-                        ♢ Wichtige Infos
 
+                    <button
+                        onclick="showFood()"
+                    >
+                        🍽️ Essen
                     </button>
 
                 </nav>
 
 
                 <section
-                    id="subDisplay">
-                </section>
+                    id="subDisplay"
+                ></section>
 
             `;
 
@@ -2165,6 +2433,24 @@
 
         }
 
+
+        /* =====================================================
+           HTML SICHER MACHEN
+        ====================================================== */
+
+        function escapeHTML(text) {
+
+            const div =
+                document.createElement(
+                    "div"
+                );
+
+            div.textContent =
+                text;
+
+            return div.innerHTML;
+
+        }
 
 
         /* =====================================================
@@ -2177,18 +2463,14 @@
                 "#subDisplay"
             ).innerHTML = `
 
-
-                <section
-                    class="content-card">
-
+                <section class="content-card">
 
                     <h2>
                         Unsere Hochzeit
                     </h2>
 
 
-                    <div
-                        class="daten-container">
+                    <div class="daten-container">
 
 
                         <div class="daten">
@@ -2213,7 +2495,6 @@
                         </div>
 
 
-
                         <div class="daten">
 
                             <h3>
@@ -2233,11 +2514,13 @@
 
                         </div>
 
+
                     </div>
 
 
                     <p
-                        style="margin-top:40px;">
+                        style="margin-top:40px;"
+                    >
 
                         Wir freuen uns riesig darauf,
                         diesen besonderen Tag
@@ -2245,13 +2528,11 @@
 
                     </p>
 
-
                 </section>
 
             `;
 
         }
-
 
 
         /* =====================================================
@@ -2264,10 +2545,7 @@
                 "#subDisplay"
             ).innerHTML = `
 
-
-                <section
-                    class="content-card">
-
+                <section class="content-card">
 
                     <h2>
                         Unser Tag
@@ -2288,14 +2566,11 @@
                             </h3>
 
                             <p>
-
                                 Im Sitzungssaal des
                                 Rathauses Achstetten.
-
                             </p>
 
                         </div>
-
 
 
                         <div class="timeline-item">
@@ -2320,7 +2595,6 @@
                             </p>
 
                         </div>
-
 
 
                         <div class="timeline-item">
@@ -2354,7 +2628,6 @@
         }
 
 
-
         /* =====================================================
            ANFAHRT
         ====================================================== */
@@ -2365,10 +2638,7 @@
                 "#subDisplay"
             ).innerHTML = `
 
-
-                <section
-                    class="content-card">
-
+                <section class="content-card">
 
                     <h2>
                         Anfahrt
@@ -2388,19 +2658,13 @@
                     <div class="maps">
 
                         <iframe
-
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2656.31200465257!2d9.894872876955462!3d48.25836997125724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479bd8ce145e8673%3A0xab29b3f6404d533f!2sRathaus!5e0!3m2!1sde!2sde!4v1787833311219!5m2!1sde!2sde"
-
                             allowfullscreen
-
                             loading="lazy"
-
                             referrerpolicy="strict-origin-when-cross-origin">
-
                         </iframe>
 
                     </div>
-
 
 
                     <h3>
@@ -2426,677 +2690,20 @@
                     <div class="maps">
 
                         <iframe
-
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2656.31200465257!2d9.894872876955462!3d48.25836997125724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479bd8ce145e8673%3A0xab29b3f6404d533f!2sRathaus!5e0!3m2!1sde!2sde!4v1787833311219!5m2!1sde!2sde"
-
                             allowfullscreen
-
                             loading="lazy"
-
                             referrerpolicy="strict-origin-when-cross-origin">
-
                         </iframe>
 
                     </div>
 
-
                 </section>
 
             `;
 
         }
 
-
-
-        /* =====================================================
-           GETRÄNKE
-        ====================================================== */
-
-        function showDrinks() {
-
-            document.querySelector(
-                "#subDisplay"
-            ).innerHTML = `
-
-
-                <section
-                    class="content-card">
-
-
-                    <h2>
-                        Getränke
-                    </h2>
-
-
-                    <p>
-
-                        Was möchtest du beim
-                        Sektempfang gerne trinken? 🥂
-
-                    </p>
-
-
-                    <p>
-
-                        <em>
-
-                            Du darfst gerne mehrere
-                            Getränke auswählen.
-
-                        </em>
-
-                    </p>
-
-
-
-                    <div class="drink-selection">
-
-
-                        <label
-                            class="drink-option">
-
-                            <input
-                                type="checkbox"
-                                name="drink"
-                                value="bier">
-
-                            <span
-                                class="drink-icon">
-                                🍺
-                            </span>
-
-                            <span>
-                                Bier
-                            </span>
-
-                        </label>
-
-
-
-                        <label
-                            class="drink-option">
-
-                            <input
-                                type="checkbox"
-                                name="drink"
-                                value="radler">
-
-                            <span
-                                class="drink-icon">
-                                🍋
-                            </span>
-
-                            <span>
-                                Radler
-                            </span>
-
-                        </label>
-
-
-
-                        <label
-                            class="drink-option">
-
-                            <input
-                                type="checkbox"
-                                name="drink"
-                                value="sekt">
-
-                            <span
-                                class="drink-icon">
-                                🥂
-                            </span>
-
-                            <span>
-                                Sekt
-                            </span>
-
-                        </label>
-
-
-
-                        <label
-                            class="drink-option">
-
-                            <input
-                                type="checkbox"
-                                name="drink"
-                                value="wasser">
-
-                            <span
-                                class="drink-icon">
-                                💧
-                            </span>
-
-                            <span>
-                                Wasser
-                            </span>
-
-                        </label>
-
-
-
-                        <label
-                            class="drink-option">
-
-                            <input
-                                type="checkbox"
-                                name="drink"
-                                value="orangensaft">
-
-                            <span
-                                class="drink-icon">
-                                🍊
-                            </span>
-
-                            <span>
-                                Orangensaft
-                            </span>
-
-                        </label>
-
-
-                    </div>
-
-
-
-                    <button
-
-                        id="drinkSaveButton"
-
-                        class="main-button"
-
-                        onclick="saveDrinkChoice()">
-
-                        Auswahl speichern
-
-                    </button>
-
-
-
-                    <div
-                        id="drinkSuccess"
-                        style="
-                            display:none;
-                            margin-top:30px;
-                            padding:25px;
-                            border-radius:25px;
-                            background:rgba(255,255,255,0.25);
-                            line-height:1.8;
-                        ">
-
-                    </div>
-
-
-                </section>
-
-            `;
-
-
-            /*
-             * Prüfen, ob auf diesem Browser
-             * bereits eine Auswahl abgegeben wurde.
-             */
-
-            if (
-                localStorage.getItem(
-                    "hochzeitGetraenkeGespeichert"
-                ) === "true"
-            ) {
-
-                disableDrinkForm();
-
-            }
-
-        }
-
-
-
-        /* =====================================================
-           GETRÄNKE SPEICHERN
-        ====================================================== */
-
-        async function saveDrinkChoice() {
-
-            const selected =
-                document.querySelectorAll(
-                    'input[name="drink"]:checked'
-                );
-
-
-            if (
-                selected.length === 0
-            ) {
-
-                alert(
-                    "Bitte wähle mindestens ein Getränk aus. 🥂"
-                );
-
-                return;
-
-            }
-
-
-            const drinks =
-                Array.from(selected)
-                    .map(
-                        checkbox =>
-                            checkbox.value
-                    );
-
-
-            const button =
-                document.getElementById(
-                    "drinkSaveButton"
-                );
-
-
-            button.disabled =
-                true;
-
-
-            button.textContent =
-                "Wird gespeichert …";
-
-
-            try {
-
-
-                /*
-                 * WICHTIG:
-                 *
-                 * Es wird ausschließlich
-                 * das drinks-Array übertragen.
-                 *
-                 * Der Name des Gastes wird
-                 * NICHT übertragen.
-                 */
-
-
-                await fetch(
-
-                    GOOGLE_SCRIPT_URL,
-
-                    {
-
-                        method:
-                            "POST",
-
-                        mode:
-                            "no-cors",
-
-                        headers: {
-
-                            "Content-Type":
-                                "text/plain;charset=utf-8"
-
-                        },
-
-                        body:
-                            JSON.stringify({
-
-                                drinks:
-                                    drinks
-
-                            })
-
-                    }
-
-                );
-
-
-                /*
-                 * Doppelte Eingabe auf demselben
-                 * Browser verhindern.
-                 */
-
-                localStorage.setItem(
-
-                    "hochzeitGetraenkeGespeichert",
-
-                    "true"
-
-                );
-
-
-                const success =
-                    document.getElementById(
-                        "drinkSuccess"
-                    );
-
-
-                success.style.display =
-                    "block";
-
-
-                success.innerHTML = `
-
-                    <strong>
-                        Vielen Dank! 🥂
-                    </strong>
-
-                    <br><br>
-
-                    Deine Getränkeauswahl
-                    wurde gespeichert.
-
-                    <br><br>
-
-                    Wir freuen uns,
-                    mit dir anzustoßen! 🤍
-
-                `;
-
-
-                disableDrinkForm();
-
-
-            } catch (error) {
-
-
-                console.error(error);
-
-
-                alert(
-
-                    "Ups! Die Auswahl konnte leider nicht gespeichert werden. Bitte versuche es noch einmal. 💕"
-
-                );
-
-
-                button.disabled =
-                    false;
-
-
-                button.textContent =
-                    "Auswahl speichern";
-
-            }
-
-        }
-
-
-
-        /* =====================================================
-           GETRÄNKE-FORMULAR DEAKTIVIEREN
-        ====================================================== */
-
-        function disableDrinkForm() {
-
-            const checkboxes =
-                document.querySelectorAll(
-                    'input[name="drink"]'
-                );
-
-
-            checkboxes.forEach(
-
-                checkbox => {
-
-                    checkbox.disabled =
-                        true;
-
-                }
-
-            );
-
-
-            const button =
-                document.getElementById(
-                    "drinkSaveButton"
-                );
-
-
-            if (button) {
-
-                button.disabled =
-                    true;
-
-                button.textContent =
-                    "Auswahl bereits gespeichert ✓";
-
-            }
-
-        }
-
-/* =========================================================
-   ESSEN
-========================================================= */
-
-function showFood() {
-
-    document.querySelector("#subDisplay").innerHTML = `
-
-        <section class="content-card">
-
-            <h2>
-                Hochzeitsessen
-            </h2>
-
-            <p>
-                Nach der Trauung möchten wir den Tag
-                gerne bei einem gemeinsamen Essen
-                ausklingen lassen. 🍽️
-            </p>
-
-            <br>
-
-            <h3>
-                Kommst du mit zum Essen?
-            </h3>
-
-
-            <div class="food-selection">
-
-                <label class="food-option">
-
-                    <input
-                        type="radio"
-                        name="food"
-                        value="ja">
-
-                    <span>
-                        Ja, ich komme mit! 🍽️
-                    </span>
-
-                </label>
-
-
-                <label class="food-option">
-
-                    <input
-                        type="radio"
-                        name="food"
-                        value="nein">
-
-                    <span>
-                        Nein, ich komme nicht mit.
-                    </span>
-
-                </label>
-
-            </div>
-
-
-            <div class="food-note">
-
-                <strong>
-                    🍴 Kleiner Hinweis für den hungrigen Teil des Tages:
-                </strong>
-
-                <br><br>
-
-                Wir heiraten zwar,
-                aber wir eröffnen an diesem Tag
-                leider kein Restaurant. 😂
-
-                <br><br>
-
-                Daher bezahlt bitte euer Essen
-                selbst.
-
-                <br><br>
-
-                Wir kümmern uns dafür sehr gerne
-                um die Hochzeit, den Sektempfang
-                und die gute Laune. 🥂💕
-
-            </div>
-
-
-            <button
-                id="foodSubmit"
-                class="main-button"
-                onclick="submitFood()">
-
-                Auswahl bestätigen 🍽️
-
-            </button>
-
-
-            <div
-                id="foodMessage"
-                style="margin-top:25px;">
-            </div>
-
-        </section>
-
-    `;
-}
-
-/* =========================================================
-   ESSEN ABSENDEN
-========================================================= */
-
-async function submitFood() {
-
-    const selected =
-        document.querySelector(
-            'input[name="food"]:checked'
-        );
-
-    const button =
-        document.getElementById("foodSubmit");
-
-    const message =
-        document.getElementById("foodMessage");
-
-
-    if (!selected) {
-
-        message.innerHTML = `
-            <p>
-                Bitte wählt kurz aus,
-                ob ihr mit zum Essen kommt. 🌸
-            </p>
-        `;
-
-        return;
-    }
-
-
-    button.disabled = true;
-
-    button.innerText =
-        "Wird gespeichert …";
-
-
-    try {
-
-        const response =
-            await fetch(
-                GOOGLE_SCRIPT_URL,
-                {
-                    method: "POST",
-
-                    body: JSON.stringify({
-
-                        drinks: [],
-
-                        essen: selected.value
-
-                    })
-                }
-            );
-
-
-        const result =
-            await response.json();
-
-
-        if (!result.success) {
-            throw new Error(
-                "Serverfehler"
-            );
-        }
-
-
-        document.querySelectorAll(
-            'input[name="food"]'
-        ).forEach(
-            radio => radio.disabled = true
-        );
-
-
-        button.style.display = "none";
-
-
-        message.innerHTML = `
-
-            <div class="food-success">
-
-                <strong>
-                    Perfekt! 🍽️💕
-                </strong>
-
-                <br><br>
-
-                Eure Antwort ist angekommen.
-
-                <br><br>
-
-                Wir freuen uns auf euch! 🥂
-
-            </div>
-
-        `;
-
-
-    } catch (error) {
-
-        console.error(error);
-
-
-        button.disabled = false;
-
-        button.innerText =
-            "Auswahl bestätigen 🍽️";
-
-
-        message.innerHTML = `
-
-            <p>
-
-                <strong>
-                    Huch! 😳
-                </strong>
-
-                <br><br>
-
-                Die Antwort konnte gerade
-                nicht gespeichert werden.
-
-                <br><br>
-
-                Bitte versucht es noch einmal.
-
-            </p>
-
-        `;
-
-    }
-
-}
 
         /* =====================================================
            ABSAGE
@@ -3108,10 +2715,7 @@ async function submitFood() {
                 "#subDisplay"
             ).innerHTML = `
 
-
-                <section
-                    class="content-card">
-
+                <section class="content-card">
 
                     <h2>
                         Absage
@@ -3120,11 +2724,8 @@ async function submitFood() {
 
                     <div class="absage">
 
-
                         <h3>
-
                             Du möchtest absagen?
-
                         </h3>
 
 
@@ -3147,17 +2748,13 @@ async function submitFood() {
                             <br><br>
 
                             <strong>
-
                                 Wir sehen uns bei der
                                 Hochzeit! 💍
-
                             </strong>
 
                         </p>
 
-
                     </div>
-
 
                 </section>
 
@@ -3166,94 +2763,914 @@ async function submitFood() {
         }
 
 
-
         /* =====================================================
-           WICHTIGE INFOS
+           GETRÄNKE
         ====================================================== */
 
-        function showInformations() {
+        function showDrinks() {
 
             document.querySelector(
                 "#subDisplay"
             ).innerHTML = `
 
-
-                <section
-                    class="content-card">
-
+                <section class="content-card">
 
                     <h2>
-                        Wichtige Infos
+                        Getränke
                     </h2>
 
 
-                    <ul
-                        class="info-list">
+                    <p>
+
+                        Was möchtest du beim
+                        Sektempfang gerne trinken?
+
+                        <br><br>
+
+                        Du darfst auch mehrere
+                        Getränke auswählen. 🥂
+
+                    </p>
 
 
-                        <li>
-
-                            💌 Weitere Informationen
-                            folgen noch.
-
-                        </li>
+                    <div class="drink-selection">
 
 
-                        <li>
+                        <label class="drink-option">
 
-                            👗 Dresscode:
-                            folgt noch.
+                            <input
+                                type="checkbox"
+                                name="drink"
+                                value="bier"
+                            >
 
-                        </li>
+                            <span>
+                                🍺 Bier
+                            </span>
 
-
-                        <li>
-
-                            🎁 Geschenkwünsche:
-                            folgen noch.
-
-                        </li>
-
-
-                        <li>
-
-                            📸 Weitere Informationen
-                            zur Feier folgen ebenfalls.
-
-                        </li>
+                        </label>
 
 
-                    </ul>
+                        <label class="drink-option">
+
+                            <input
+                                type="checkbox"
+                                name="drink"
+                                value="radler"
+                            >
+
+                            <span>
+                                🍺 Radler
+                            </span>
+
+                        </label>
+
+
+                        <label class="drink-option">
+
+                            <input
+                                type="checkbox"
+                                name="drink"
+                                value="sekt"
+                            >
+
+                            <span>
+                                🥂 Sekt
+                            </span>
+
+                        </label>
+
+
+                        <label class="drink-option">
+
+                            <input
+                                type="checkbox"
+                                name="drink"
+                                value="wasser"
+                            >
+
+                            <span>
+                                💧 Wasser
+                            </span>
+
+                        </label>
+
+
+                        <label class="drink-option">
+
+                            <input
+                                type="checkbox"
+                                name="drink"
+                                value="orangensaft"
+                            >
+
+                            <span>
+                                🍊 Orangensaft
+                            </span>
+
+                        </label>
+
+
+                    </div>
+
+
+                    <button
+                        id="drinkSubmit"
+                        class="main-button"
+                        onclick="submitDrinks()"
+                    >
+
+                        Auswahl bestätigen 🥂
+
+                    </button>
+
+
+                    <div
+                        id="drinkMessage"
+                    ></div>
 
 
                 </section>
 
             `;
 
-        }
+            restoreDrinkState();
 
+        }
 
 
         /* =====================================================
-           HTML-SICHERHEIT
+           GETRÄNKE ABSENDEN
         ====================================================== */
 
-        function escapeHTML(text) {
+        async function submitDrinks() {
 
-            const div =
-                document.createElement(
-                    "div"
+            const selected =
+                Array.from(
+                    document.querySelectorAll(
+                        'input[name="drink"]:checked'
+                    )
+                ).map(
+                    checkbox =>
+                        checkbox.value
                 );
 
 
-            div.textContent =
-                text;
+            const button =
+                document.getElementById(
+                    "drinkSubmit"
+                );
 
 
-            return div.innerHTML;
+            const message =
+                document.getElementById(
+                    "drinkMessage"
+                );
+
+
+            if (
+                selected.length === 0
+            ) {
+
+                message.innerHTML = `
+
+                    <div class="error-box">
+
+                        Bitte wähle mindestens
+                        ein Getränk aus. 🌸
+
+                    </div>
+
+                `;
+
+                return;
+
+            }
+
+
+            button.disabled =
+                true;
+
+            button.innerText =
+                "Wird gespeichert …";
+
+
+            const success =
+                await sendToGoogle({
+
+                    action:
+                        "submit",
+
+                    guestId:
+                        getGuestId(),
+
+                    drinks:
+                        selected
+
+                });
+
+
+            if (success) {
+
+                localStorage.setItem(
+                    "hochzeit_drinks",
+                    JSON.stringify(
+                        selected
+                    )
+                );
+
+
+                disableDrinkInputs();
+
+
+                button.style.display =
+                    "none";
+
+
+                message.innerHTML = `
+
+                    <div class="success-box">
+
+                        <strong>
+                            Perfekt! 🥂💕
+                        </strong>
+
+                        <br><br>
+
+                        Eure Getränkeauswahl
+                        ist angekommen.
+
+                        <br><br>
+
+                        <button
+                            class="undo-button"
+                            onclick="undoDrinks()"
+                        >
+                            ↩️ Getränkeauswahl zurücknehmen
+                        </button>
+
+                    </div>
+
+                `;
+
+            } else {
+
+                button.disabled =
+                    false;
+
+                button.innerText =
+                    "Auswahl bestätigen 🥂";
+
+
+                message.innerHTML = `
+
+                    <div class="error-box">
+
+                        Huch! 😳
+
+                        <br><br>
+
+                        Die Antwort konnte gerade
+                        nicht gesendet werden.
+
+                        <br><br>
+
+                        Bitte versucht es noch einmal.
+
+                    </div>
+
+                `;
+
+            }
 
         }
 
+
+        /* =====================================================
+           GETRÄNKE UNDO
+        ====================================================== */
+
+        async function undoDrinks() {
+
+            const success =
+                await sendToGoogle({
+
+                    action:
+                        "undo",
+
+                    guestId:
+                        getGuestId(),
+
+                    drinks:
+                        []
+
+                });
+
+
+            if (!success) {
+
+                alert(
+                    "Die Auswahl konnte gerade nicht zurückgenommen werden. Bitte versucht es noch einmal."
+                );
+
+                return;
+
+            }
+
+
+            localStorage.removeItem(
+                "hochzeit_drinks"
+            );
+
+
+            showDrinks();
+
+        }
+
+
+        /* =====================================================
+           GETRÄNKE ZUSTAND WIEDERHERSTELLEN
+        ====================================================== */
+
+        function restoreDrinkState() {
+
+            const stored =
+                localStorage.getItem(
+                    "hochzeit_drinks"
+                );
+
+
+            if (!stored) {
+                return;
+            }
+
+
+            let drinks;
+
+            try {
+
+                drinks =
+                    JSON.parse(
+                        stored
+                    );
+
+            } catch (error) {
+
+                return;
+
+            }
+
+
+            drinks.forEach(
+                function(drink) {
+
+                    const checkbox =
+                        document.querySelector(
+                            `input[name="drink"][value="${drink}"]`
+                        );
+
+
+                    if (checkbox) {
+
+                        checkbox.checked =
+                            true;
+
+                    }
+
+                }
+            );
+
+
+            disableDrinkInputs();
+
+
+            const button =
+                document.getElementById(
+                    "drinkSubmit"
+                );
+
+
+            if (button) {
+
+                button.style.display =
+                    "none";
+
+            }
+
+
+            const message =
+                document.getElementById(
+                    "drinkMessage"
+                );
+
+
+            if (message) {
+
+                message.innerHTML = `
+
+                    <div class="success-box">
+
+                        Eure Getränkeauswahl
+                        wurde bereits gespeichert. 🥂
+
+                        <br><br>
+
+                        <button
+                            class="undo-button"
+                            onclick="undoDrinks()"
+                        >
+                            ↩️ Getränkeauswahl zurücknehmen
+                        </button>
+
+                    </div>
+
+                `;
+
+            }
+
+        }
+
+
+        function disableDrinkInputs() {
+
+            document
+                .querySelectorAll(
+                    'input[name="drink"]'
+                )
+                .forEach(
+                    checkbox =>
+                        checkbox.disabled =
+                            true
+                );
+
+        }
+
+
+        /* =====================================================
+           ESSEN
+        ====================================================== */
+
+        function showFood() {
+
+            document.querySelector(
+                "#subDisplay"
+            ).innerHTML = `
+
+                <section class="content-card">
+
+                    <h2>
+                        Hochzeitsessen
+                    </h2>
+
+
+                    <p>
+
+                        Nach der Trauung möchten wir
+                        den Tag gerne bei einem
+                        gemeinsamen Essen ausklingen
+                        lassen. 🍽️
+
+                    </p>
+
+
+                    <br>
+
+
+                    <h3>
+                        Kommst du mit zum Essen?
+                    </h3>
+
+
+                    <div class="food-selection">
+
+
+                        <label class="food-option">
+
+                            <input
+                                type="radio"
+                                name="food"
+                                value="ja"
+                            >
+
+                            <span>
+                                Ja, ich komme mit! 🍽️
+                            </span>
+
+                        </label>
+
+
+                        <label class="food-option">
+
+                            <input
+                                type="radio"
+                                name="food"
+                                value="nein"
+                            >
+
+                            <span>
+                                Nein, ich komme nicht mit.
+                            </span>
+
+                        </label>
+
+
+                    </div>
+
+
+                    <div class="food-note">
+
+                        <strong>
+                            🍴 Kleiner Hinweis für den
+                            hungrigen Teil des Tages:
+                        </strong>
+
+                        <br><br>
+
+                        Wir heiraten zwar,
+                        aber wir eröffnen an diesem Tag
+                        leider kein Restaurant. 😂
+
+                        <br><br>
+
+                        Daher bezahlt bitte euer Essen
+                        selbst.
+
+                        <br><br>
+
+                        Wir kümmern uns dafür sehr gerne
+                        um die Hochzeit, den Sektempfang
+                        und die gute Laune. 🥂💕
+
+                    </div>
+
+
+                    <button
+                        id="foodSubmit"
+                        class="main-button"
+                        onclick="submitFood()"
+                    >
+
+                        Auswahl bestätigen 🍽️
+
+                    </button>
+
+
+                    <div
+                        id="foodMessage"
+                    ></div>
+
+
+                </section>
+
+            `;
+
+            restoreFoodState();
+
+        }
+
+
+        /* =====================================================
+           ESSEN ABSENDEN
+        ====================================================== */
+
+        async function submitFood() {
+
+            const selected =
+                document.querySelector(
+                    'input[name="food"]:checked'
+                );
+
+
+            const button =
+                document.getElementById(
+                    "foodSubmit"
+                );
+
+
+            const message =
+                document.getElementById(
+                    "foodMessage"
+                );
+
+
+            if (!selected) {
+
+                message.innerHTML = `
+
+                    <div class="error-box">
+
+                        Bitte wählt kurz aus,
+                        ob ihr mit zum Essen kommt. 🌸
+
+                    </div>
+
+                `;
+
+                return;
+
+            }
+
+
+            button.disabled =
+                true;
+
+            button.innerText =
+                "Wird gespeichert …";
+
+
+            const success =
+                await sendToGoogle({
+
+                    action:
+                        "submit",
+
+                    guestId:
+                        getGuestId(),
+
+                    drinks:
+                        [],
+
+                    essen:
+                        selected.value
+
+                });
+
+
+            if (success) {
+
+                localStorage.setItem(
+                    "hochzeit_essen",
+                    selected.value
+                );
+
+
+                disableFoodInputs();
+
+
+                button.style.display =
+                    "none";
+
+
+                message.innerHTML = `
+
+                    <div class="success-box">
+
+                        <strong>
+                            Perfekt! 🍽️💕
+                        </strong>
+
+                        <br><br>
+
+                        Eure Antwort
+                        ist angekommen.
+
+                        <br><br>
+
+                        <button
+                            class="undo-button"
+                            onclick="undoFood()"
+                        >
+                            ↩️ Essensantwort zurücknehmen
+                        </button>
+
+                    </div>
+
+                `;
+
+            } else {
+
+                button.disabled =
+                    false;
+
+                button.innerText =
+                    "Auswahl bestätigen 🍽️";
+
+
+                message.innerHTML = `
+
+                    <div class="error-box">
+
+                        Huch! 😳
+
+                        <br><br>
+
+                        Die Antwort konnte gerade
+                        nicht gesendet werden.
+
+                        <br><br>
+
+                        Bitte versucht es noch einmal.
+
+                    </div>
+
+                `;
+
+            }
+
+        }
+
+
+        /* =====================================================
+           ESSEN UNDO
+        ====================================================== */
+
+        async function undoFood() {
+
+            const success =
+                await sendToGoogle({
+
+                    action:
+                        "undo",
+
+                    guestId:
+                        getGuestId(),
+
+                    drinks:
+                        []
+
+                });
+
+
+            if (!success) {
+
+                alert(
+                    "Die Antwort konnte gerade nicht zurückgenommen werden. Bitte versucht es noch einmal."
+                );
+
+                return;
+
+            }
+
+
+            localStorage.removeItem(
+                "hochzeit_essen"
+            );
+
+
+            showFood();
+
+        }
+
+
+        /* =====================================================
+           ESSEN ZUSTAND WIEDERHERSTELLEN
+        ====================================================== */
+
+        function restoreFoodState() {
+
+            const stored =
+                localStorage.getItem(
+                    "hochzeit_essen"
+                );
+
+
+            if (!stored) {
+                return;
+            }
+
+
+            const radio =
+                document.querySelector(
+                    `input[name="food"][value="${stored}"]`
+                );
+
+
+            if (radio) {
+
+                radio.checked =
+                    true;
+
+            }
+
+
+            disableFoodInputs();
+
+
+            const button =
+                document.getElementById(
+                    "foodSubmit"
+                );
+
+
+            if (button) {
+
+                button.style.display =
+                    "none";
+
+            }
+
+
+            const message =
+                document.getElementById(
+                    "foodMessage"
+                );
+
+
+            if (message) {
+
+                message.innerHTML = `
+
+                    <div class="success-box">
+
+                        Eure Essensantwort
+                        wurde bereits gespeichert. 🍽️
+
+                        <br><br>
+
+                        <button
+                            class="undo-button"
+                            onclick="undoFood()"
+                        >
+                            ↩️ Essensantwort zurücknehmen
+                        </button>
+
+                    </div>
+
+                `;
+
+            }
+
+        }
+
+
+        function disableFoodInputs() {
+
+            document
+                .querySelectorAll(
+                    'input[name="food"]'
+                )
+                .forEach(
+                    radio =>
+                        radio.disabled =
+                            true
+                );
+
+        }
+
+
+        /* =====================================================
+           GOOGLE APPS SCRIPT
+        ====================================================== */
+
+        async function sendToGoogle(data) {
+
+            try {
+
+                /*
+                 * no-cors verhindert, dass der Browser
+                 * die Anfrage wegen CORS blockiert.
+                 *
+                 * Google Apps Script erhält die Daten
+                 * trotzdem ganz normal.
+                 */
+
+                await fetch(
+                    GOOGLE_SCRIPT_URL,
+                    {
+
+                        method:
+                            "POST",
+
+                        mode:
+                            "no-cors",
+
+                        headers: {
+
+                            "Content-Type":
+                                "text/plain;charset=utf-8"
+
+                        },
+
+                        body:
+                            JSON.stringify(data)
+
+                    }
+                );
+
+
+                /*
+                 * Bei no-cors können wir die Antwort
+                 * von Google nicht auslesen.
+                 *
+                 * Wenn fetch ohne Netzwerkfehler
+                 * durchläuft, betrachten wir die
+                 * Anfrage als erfolgreich.
+                 */
+
+                return true;
+
+
+            } catch (error) {
+
+                console.error(
+                    error
+                );
+
+                return false;
+
+            }
+
+        }
 
     </script>
 
@@ -3261,4 +3678,3 @@ async function submitFood() {
 </body>
 
 </html>
-```
