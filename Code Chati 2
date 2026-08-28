@@ -1324,20 +1324,32 @@
 
 
         .timeline-time {
+    display: inline-block;
 
-            font-family:
-                'Cormorant Garamond',
-                serif;
+    font-family:
+        'Cormorant Garamond',
+        serif;
 
-            font-size:
-                1.5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
 
-            color:
-                var(--gold);
+    color: var(--rosa-dunkel);
 
-        }
+    background:
+        rgba(255, 245, 242, 0.55);
 
+    padding:
+        4px 14px;
 
+    border-radius: 20px;
+
+    letter-spacing: 0.5px;
+
+    text-shadow:
+        0 1px 1px rgba(255, 255, 255, 0.5);
+
+    margin-bottom: 5px;
+}
 
         /* =====================================================
            GETRÄNKE
